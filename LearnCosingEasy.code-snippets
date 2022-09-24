@@ -1,0 +1,1292 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /*******		         	Css		          ******/
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ////////////////////// Element ////////////////////////
+  ///////////////////////////////////////////////////////
+  "scrollbar لون الاسكرال": {
+    "prefix": "css scrollbar ",
+    "body": [
+      "::-webkit-scrollbar {",
+      "  width: 1rem;",
+      "  background-color: #333;",
+      "}",
+      "::-webkit-scrollbar-thumb {",
+      "  background-color: #bbbbbb;",
+      "  border-radius: 0.25rem;",
+      "}"
+    ],
+    "description": "scrollbar لون الاسكرال"
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  //////////////////////// Test /////////////////////////
+  ///////////////////////////////////////////////////////
+  "border test": {
+    "prefix": "css bt ",
+    "body": ["border: 0.5rem solid #f00;"],
+    "description": "border test"
+  },
+
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  //////////////////////// Media ////////////////////////
+  ///////////////////////////////////////////////////////
+  "جميع الشاشات": {
+    "prefix": "css media all",
+    "body": [
+      "/* Small Devices (Phones, Less Than 575.98px) = Bootstrap V5 Xs */",
+      "@media screen and (max-width: 575.98px) {}",
+      "/* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */",
+      "@media screen and (min-width:576px) and (max-width:677px) {}",
+      "/* Large Devices (Phones, 678px And 767px) */",
+      "@media screen and (min-width:678px) and (max-width:767px) {}",
+      "/* Medium Devices (Tablets, 768px And 991px) = Bootstrap V5 Md */",
+      "@media screen and (min-width:768px) and (max-width:991px) {}",
+      "/* Small Devices (Desktops, 992px And 1199px) = Bootstrap V5 Lg */",
+      "@media screen and (min-width:992px) and (max-width:1199px) {}",
+      "/* Medium Devices (Medium Desktops, 1200px And 1399px) = Bootstrap V5 Xl */",
+      "@media screen and (min-width:1200px) and (max-width:1399px) {}",
+      "/* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */",
+      "@media screen and (min-width:1400px) {}"
+    ],
+    "description": "جميع الشاشات"
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ////////////////////// Comment ////////////////////////
+  ///////////////////////////////////////////////////////
+  "كمانت ": {
+    "prefix": "css comment",
+    "body": ["/* My Style */"],
+    "description": "كمانت "
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  /////////////////////// Color /////////////////////////
+  ///////////////////////////////////////////////////////
+  "لون مكتبة Vue 1": {
+    "prefix": "css color vue ",
+    "body": ["#42b883"],
+    "description": "لون مكتبة Vue"
+  },
+  "لون مكتبة Vue 2": {
+    "prefix": "css color vue 2",
+    "body": ["#35495e"],
+    "description": "لون مكتبة Vue"
+  },
+  " لون  javascript ": {
+    "prefix": "css color javascript",
+    "body": ["#f7df1e"],
+    "description": " لون مكتبة javascript "
+  },
+  "لون  html": {
+    "prefix": "css color html",
+    "body": ["#e34f26"],
+    "description": "لون مكتبة html"
+  },
+  "لون  github": {
+    "prefix": "css color github ",
+    "body": ["#333"],
+    "description": "لون مكتبة github"
+  },
+  "لون facebook ": {
+    "prefix": "css color facebook",
+    "body": ["#1877f2"],
+    "description": "لون facebook "
+  },
+  "لون twitter ": {
+    "prefix": "css color twitter",
+    "body": ["#1da1f2"],
+    "description": "لون twitter "
+  },
+  "لون youTube ": {
+    "prefix": "css color youTube",
+    "body": ["#ff0000"],
+    "description": "لون youTube "
+  },
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /*******		   	Vue			   ******/
+  "بداية صفحة جديدة": {
+    "prefix": "vue new page",
+    "body": [
+      "<template><div class=\"\"></div></template>",
+      "",
+      "<script>",
+      "export default { name: \"\", };",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped></style>"
+    ],
+    "description": "بداية صفحة جديدة"
+  },
+  "بداية صفحة للشارح": {
+    "prefix": "vue start component explain",
+    "body": [
+      "<template>",
+      "  <!-- Start Component Name -->",
+      "  <div class=\"ScssFunction\">",
+      "    <!-- Start Wrapper Page -->",
+      "    <div class=\"wrapper-page\">",
+      "      <!-- Start Container -->",
+      "      <div class=\"container\">",
+      "        <!-- Start Page Come From -->",
+      "        <div class=\"page-come-from\">",
+      "          <nav aria-label=\"breadcrumb\">",
+      "            <ol class=\"breadcrumb\">",
+      "              <li class=\"breadcrumb-item\">",
+      "                <router-link class=\"link\" to=\"/Scss\">",
+      "                  <span class=\"text\"> Scss </span>",
+      "                </router-link>",
+      "              </li>",
+      "              <li class=\"breadcrumb-item active\" aria-current=\"page\">",
+      "                Function",
+      "              </li>",
+      "            </ol>",
+      "          </nav>",
+      "        </div>",
+      "        <!-- End Page Come From -->",
+      "        <!-- Start Inner -->",
+      "        <div class=\"inner\">",
+      "          <div class=\"header\">",
+      "            <div class=\"head\">Function</div>",
+      "          </div>",
+      "          <!-- Start Main -->",
+      "          <div class=\"main DynamicScrollStates\">",
+      "            <article>",
+      "              <section",
+      "                v-motion",
+      "                :initial=\"{ opacity: 0, scale: 0, y: 200 }\"",
+      "                :visible=\"{ opacity: 1, scale: 0.99, y: 0 }\"",
+      "                :delay=\"200\"",
+      "                v-for=\"(header, index) in headers\"",
+      "                :key=\"header\"",
+      "              >",
+      "                <div class=\"content-section\" v-if=\"index == 0\">",
+      "                  <div class=\"Section-name\">",
+      "                    <!-- <header class=\"title-header\"> -->",
+      "                    <h2 class=\"title-header\" :id=\"index\">{{ header }}</h2>",
+      "                    <!-- </header> -->",
+      "                  </div>",
+      "                  <!-- Start Description -->",
+      "                  <div class=\"disc\">",
+      "                    <p class=\"lead\" dir=\"auto\"></p>",
+      "                  </div>",
+      "                  <!-- End Description -->",
+      "                </div>",
+      "                <div class=\"content-section\" v-else-if=\"index == 1\">",
+      "                  <div class=\"Section-name\">",
+      "                    <!-- <header class=\"title-header\"> -->",
+      "                    <h2 class=\"title-header\" :id=\"index\">{{ header }}</h2>",
+      "                    <!-- </header> -->",
+      "                  </div>",
+      "                  <!-- Start Content Code -->",
+      "                  <div class=\"content-code\">",
+      "                    <div class=\"code\">",
+      "                      <prism language=\"javascript\">{{ TestCode }}</prism>",
+      "                    </div>",
+      "                    <div class=\"icon-copy\" @click=\"copy(TestCode)\">",
+      "                      <fa :icon=\"['fas', 'copy']\" />",
+      "                    </div>",
+      "                  </div>",
+      "                  <!-- End Content Code -->",
+      "                </div>",
+      "                <div class=\"content-section\" v-else-if=\"index == 2\">",
+      "                  <div class=\"Section-name\">",
+      "                    <!-- <header class=\"title-header\"> -->",
+      "                    <h2 class=\"title-header\" :id=\"index\">{{ header }}</h2>",
+      "                    <!-- </header> -->",
+      "                  </div>",
+      "                  <!-- Start References -->",
+      "                  <div class=\"references\">",
+      "                    <div class=\"wrapper\">",
+      "                      <div class=\"title\">",
+      "                        <h2>references</h2>",
+      "                        <h2>المراجع</h2>",
+      "                      </div>",
+      "                      <div class=\"inner\">",
+      "                        <!-- Git Reset Head  -->",
+      "                        <a class=\"icon\" href=\"#\" target=\"_blank\">",
+      "                          <div class=\"svg-wrapper-1\">",
+      "                            <div class=\"svg-wrapper\">",
+      "                              <fa :icon=\"['fas', 'globe-americas']\"></fa>",
+      "                            </div>",
+      "                          </div>",
+      "                          <span> Link </span>",
+      "                        </a>",
+      "                      </div>",
+      "                    </div>",
+      "                  </div>",
+      "                  <!-- End References -->",
+      "                </div>",
+      "                <div class=\"content-section\" v-else-if=\"index == 3\">",
+      "                  <div class=\"Section-name\">",
+      "                    <header class=\"title-header\">",
+      "                      <h2 :id=\"index\">{{ header }}</h2>",
+      "                    </header>",
+      "                  </div>",
+      "                </div>",
+      "                <div class=\"content-section\" v-else-if=\"index == 4\">",
+      "                  <div class=\"Section-name\">",
+      "                    <header class=\"title-header\">",
+      "                      <h2 :id=\"index\">{{ header }}</h2>",
+      "                    </header>",
+      "                  </div>",
+      "                </div>",
+      "                <div class=\"content-section\" v-else-if=\"index == 5\">",
+      "                  <div class=\"Section-name\">",
+      "                    <header class=\"title-header\">",
+      "                      <h2 :id=\"index\">{{ header }}</h2>",
+      "                    </header>",
+      "                  </div>",
+      "                </div>",
+      "              </section>",
+      "            </article>",
+      "            <aside>",
+      "              <div class=\"div-aside\">",
+      "                <!-- {{ currentSection }} -->",
+      "                <a",
+      "                  v-for=\"(header, index) in headers\"",
+      "                  :key=\"header\"",
+      "                  :href=\"`#${index}`\"",
+      "                  :class=\"{ activeAside: index == currentSection }\"",
+      "                >",
+      "                  {{ header }}",
+      "                </a>",
+      "              </div>",
+      "            </aside>",
+      "          </div>",
+      "          <!-- End Main -->",
+      "          <!-- Start Share Page -->",
+      "          <SharePage></SharePage>",
+      "          <!-- Start Share Page -->",
+      "        </div>",
+      "        <!-- End Inner -->",
+      "      </div>",
+      "      <!-- End Container -->",
+      "    </div>",
+      "    <!-- End Wrapper Page -->",
+      "  </div>",
+      "  <!-- End Component Name -->",
+      "</template>",
+      "",
+      "<script>",
+      "import SharePage from \"@/components/Global/SharePage.vue\";",
+      "import Prism from \"vue-prism-component\";",
+      "import { ref } from \"@vue/reactivity\";",
+      "import { onMounted } from \"vue\";",
+      "// import _ from \"lodash\";",
+      "export default {",
+      "  name: \"Introduction\",",
+      "  data() {",
+      "    return {",
+      "      postTitle: ``,",
+      "      TestCode: `Code`,",
+      "    };",
+      "  },",
+      "  methods: {",
+      "    copy(e) {",
+      "      navigator.clipboard.writeText(e);",
+      "      this.$swal(`Copy Done!!!`);",
+      "      console.log(e);",
+      "    },",
+      "  },",
+      "  components: { Prism, SharePage },",
+      "  setup() {",
+      "    // Section Title",
+      "    let headers = [\"Description \", \"Code \", \"References  \"];",
+      "    let currentSection = ref(\"\");",
+      "    onMounted(() => {",
+      "      let observer = new IntersectionObserver(",
+      "        (entries) => {",
+      "          entries.forEach((entry) => {",
+      "            if (entry.intersectionRatio > 0) {",
+      "              currentSection.value = entry.target.getAttribute(\"id\");",
+      "            }",
+      "          });",
+      "        },",
+      "        {",
+      "          rootMargin: \"0px 0px -90% 0px\",",
+      "        }",
+      "      );",
+      "      document.querySelectorAll(\"article h2\").forEach((section) => {",
+      "        observer.observe(section);",
+      "      });",
+      "    });",
+      "",
+      "    return { headers, currentSection };",
+      "  },",
+      "};",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped></style>",
+      ""
+    ],
+    "description": "بداية صفحة للشارح"
+  },
+  "كتابة كود": {
+    "prefix": "vue code",
+    "body": [
+      "<!-- Start Content Code -->",
+      "<div class=\"content-code\">",
+      "  <div class=\"code\">",
+      "    <prism language=\"javascript\">{{ CodeName}}</prism>",
+      "  </div>",
+      "  <div class=\"icon-copy\" @click=\"copy(CodeName)\">",
+      "    <fa :icon=\"['fas', 'copy']\" />",
+      "  </div>",
+      "</div>",
+      "<!-- End Content Code -->"
+    ],
+    "description": "كتابة كود"
+  },
+  "كتابة وصف النص": {
+    "prefix": "vue type desc",
+    "body": [
+      "<!-- Start Description -->  ",
+      "<div class=\"disc\">  ",
+      "  <p class=\"lead\" dir=\"auto\"> ",
+      "  </p>  ",
+      "</div>  ",
+      "<!-- End Description -->  ",
+      ""
+    ],
+    "description": "كتابة وصف النص"
+  },
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /*******		   	lODASH			   ******/
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  "استدعاء المكتبة فى Vue": {
+    // "scope": "html,javascript,vue",
+    "prefix": "vue lodash import for vue",
+    "body": ["import _ from \"lodash\";"],
+    "description": "استدعاء المكتبة فى Vue"
+  },
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /*******		   	PLUGIN			   ******/
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  "اضافة السوايت الايرت": {
+    "prefix": "vue sweet alert",
+    "body": ["this.$swal(\"Copy Done!!!\");"],
+    "description": "اضافة السوايت الايرت"
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  //////////////////////// Npm //////////////////////////
+  ///////////////////////////////////////////////////////
+  /********                  Npm                ********/
+  "npm help": {
+    "prefix": "npm help",
+    "body": [
+      "/**",
+      " * ",
+      " * ? Npm",
+      " * npm install",
+      " * npm uninstall --save PackageName",
+      " * npm run serve",
+      " * npm run build",
+      " *",
+      " * ",
+      " * ? Webpack",
+      " * npm run build",
+      " *",
+      " * ",
+      " * ? Error",
+      " * npm run lint -- --fix",
+      " *",
+      " * ",
+      " * ? Node",
+      " * node -v",
+      " *",
+      " * ",
+      " * ? Vue",
+      " * npm install -g @vue/cli",
+      " *",
+      " * ",
+      " * ? Firebase",
+      " * firebase --version",
+      " * firebase -V",
+      " * firebase help",
+      " * firebase [command] --help",
+      " * npm install firebase",
+      " * npm install -g firebase-tools",
+      " * firebase login",
+      " * firebase logout",
+      " * firebase init",
+      " * firebase serve",
+      " * firebase serve --only functions, hosting",
+      " * firebase deploy",
+      " * firebase deploy --only hosting",
+      " * firebase deploy --only functions",
+      " * firebase deploy --only functions:functionName",
+      " * firebase deploy --only functions:function1, function2",
+      " * firebase deploy --only storage",
+      " * firebase deploy --only hosting,functions,storage",
+      " * LearnCodingEasy/",
+      " *",
+      " * ? Json Server",
+      " * json-server --watch data/db.json",
+      " * json-server --watch data/EnglishDictionary.json",
+      " * json-server --watch src/Services/EnglishDictionary.json",
+      " *",
+      " * ? Cache",
+      " * npm cache clean --force",
+      " *",
+      " */"
+    ],
+    "description": "npm help"
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////// Javascript //////////////////////
+  /******                 Javascript            ********/
+  ///////////////////////////////////////////////////////
+  /* 
+  Todo *********** Start Empty File Javascript *********** 
+  */
+  "js start file javascript": {
+    "prefix": "js help start file",
+    "body": [
+      "/*",
+      "===============================================",
+      "?              Global Actions",
+      "===============================================",
+      "*/",
+      "",
+      "",
+      "/*",
+      "===============================================",
+      "?                  Import",
+      "===============================================",
+      "*/",
+      "",
+      "",
+      "/*",
+      "===============================================",
+      "?                Variables",
+      "===============================================",
+      "*/",
+      "",
+      "",
+      "/*",
+      "===============================================",
+      "?               Functions",
+      "===============================================",
+      "*/",
+      "",
+      "",
+      "",
+      "/*",
+      "===============================================",
+      "?             Event Listeners",
+      "===============================================",
+      "*/"
+    ],
+    "description": " description js start file javascript"
+  },
+  /* 
+  Todo ************************ Data Type ************************ 
+  */
+  "Javascript Number": {
+    "prefix": "js number",
+    "body": [
+      "console.log(`${1|${},${Operators  العملية الحسابية },${number + number},${number - number},${number * number},${number ** number},${number / number},${number % number},${++number},${number++},${--number},${number--},${},${Unary Operators   تحويل الارقام اللى تكتاب بصيغة استرانج الى ارقام      },${+number},${-number},${+true},${-true},${+false},${-false},${+null},${-null},${Number(\"100\")},${Number(\"-100\")},${Number(\"100\") + 10},${},${Number طريقة التعامل مع الارقام      },${1000000},${1_000_000},${1e6},${10 ** 6},${Number.MAX_SAFE_INTEGER},${Number.MAX_VALUE},${تحويل الارقام الى استرانج },${(100).toString()},${100.10.toString()},${number.toString()},${},${toFixed تتحكم فيى الكسور عاوز كام رقم يرجعو فى الكسور 5 Top 1 & 4 down 0},${number.toFixed(2)},${},${ParseInt استخراج الارقام من الاسترنج من غير كسور },${parseInt(number)},${parseInt('300 px')},${},${ParseFloat  استخراج الارقام من الاسترنج مع  كسور },${parseFloat(number)},${parseFloat('300.20 px')},${},${isInteger التاكد من الرقم هل هو عدد صحيح النتيجة true Or false},${Number.isInteger(number)},${Number.isInteger(\"100.55\")},${},${isNaN بيشيك على النتيجة اللى بين القوصين لو ناجحة بيرجع False و لو هيرجع NaN اللى هو العملية مش منطقية },${Number.isNaN(number)},${Number.isNaN(\"100\")},${Number.isNaN(\"Learn\" / 100)},${},${MATH . ROUND بيقارب الرقم لفوق و لتحت اقل من نص = 5 بيقربو للصفر و 5 لفوق بيقربو الى 1},${Math.round(99.2)},${Math.round(99.5)},${},${MATH . CEIL بيقرب الرقام الى فوق ( بيقرب الرقم الى رقم صحيح )},${Math.ceil(number)},${Math.ceil(99.1)},${Math.ceil(99.6)},${},${Math . floor بيقرب الرقام الى تحت ( بيقرب الرقم الى صفر )      },${Math.floor(number)},${Math.floor(99.9)},${},${Math . Max بيرجع من مجموعة ارقام الرقم الاكبر },${Math.max(number)},${Math.max(99.9\\, 100\\, 12\\, 10\\, 50)},${},${},${Math . min بيرجع من مجموعة ارقام الاقل الاكبر },${Math.min(number)},${Math.min(99.9\\, 100\\, 12\\, 10\\, 50)},${},${Math . pow اللى هو الرقم الاول مضروب فى نفسه كام مرة }${Math.pow(number\\, 3)},${Math.pow(2\\, 3)},${},${Math . random بيخرج رقم عشواء كل مرة بيعمل فيها ريلود للصفحة},${Math.random()},${Math.floor(Math.random() * 1000000) + 1},${},${Math . trunk يشيل الارقام العشرية ويرجع الرقم الى عدد صحيح},${Math.trunc(number)},${Math.trunc(99.6)}|}`);"
+    ],
+    "description": "Javascript Number"
+  },
+  "Javascript String": {
+    "prefix": "js string",
+    "body": [
+      "${1|_________________________________________________________________________________,_________________________________________________________________________________,الوصول الى الحرف,Index,console.log(`${dataString[1]}`);,____________________________________________,CharAt,console.log(`${dataString.charAt(3)}`);,(function () {'use strict'; if (dataString.charAt(0) == 'T') { console.log(`Yas It Is The Alphabet`); } else { console.log(`No It Isn't The Alphabet`); } })();,(function () {'use strict'; if (dataString.charAt(0) <= 'h') { console.log(`Yas It Is The Alphabet`); } else { console.log(`No It Isn't The Alphabet`); } })();,_________________________________________________________________________________,_________________________________________________________________________________,عدد الحروف اللى فى الاسترانج ,console.log(`${dataString.length}`);,_________________________________________________________________________________,_________________________________________________________________________________, بيشيل المسافات اللى برة الاسترانج ,Trim,console.log(`${dataString.trim()}`);,_________________________________________________________________________________,_________________________________________________________________________________, تحويل الاسترانج الى حروف كبيرة ,ToUpperCase,console.log(dataString.toUpperCase());,_________________________________________________________________________________,_________________________________________________________________________________, تحويل الاسترانج الى حروف صغيره ,ToLowerCase,console.log(dataString.toLowerCase());,_________________________________________________________________________________,_________________________________________________________________________________,البحث فى الاسترانج , indexOf,console.log(`${dataString.indexOf('word')}`);,console.log(`${dataString.indexOf(\"Word\"\\, 20)}`);,if (dataString.indexOf(\"String\") > -1) {console.log(`Yes`);} else { console.log(`No`); },dataString.indexOf(\"String\") > -1 ? console.log(\"Yes\") : console.log(\"No\");,____________________________________________,lastIndexOf,console.log(${dataString.lastIndexOf('word')});,console.log(dataString.lastIndexOf(\"Word\" \\, 20));,if (dataString.lastIndexOf(\"String\") > -1) {console.log(`Yes`);} else { console.log(`No`); },dataString.lastIndexOf(\"String\") > -1 ? console.log(\"Yes\") : console.log(\"No\");,____________________________________________,البحث فى الاسترانج على كلمة القيمة بليان True  False,includes,console.log(`${dataString.includes('word')}`);,console.log(`${dataString.includes('words'\\, 5)}`);,____________________________________________, البحث فى الاسترانج هل هو بداية بى كلمة معينة,StartsWith,console.log(`${dataString.startsWith('Text')}`);,console.log(`${dataString.startsWith('String'\\, 5)}`);,____________________________________________, البحث فى الاسترانج هل هو ينتهى  بى كلمة معينة,endsWith,console.log(`${dataString.endsWith('Text')}`);,console.log(`${dataString.endsWith('String'\\, 5)}`);,____________________________________________,بيراجع رقم العنصر فى الاسترانج لو الكلمة مش موجودة بيراجع -1,Search ,console.log(`${dataString.search(\"word\")}`);,console.log(`${dataString.search(/word/i)}`);,console.log(`${dataString.search(/word/gi)}`);,console.log(`${dataString.search(/words/gi)}`);,_________________________________________________________________________________,_________________________________________________________________________________ , شريحة من الاسترانج ,Slice,console.log(`${dataString.slice()}`);,console.log(`${dataString.slice(0\\, 10)}`);,console.log(`${dataString.slice(Start \\, End)}`);,____________________________________________,Substring,console.log(`${dataString.substring(6\\, 11)}`);,console.log(`${dataString.substring(11\\, 6)}`);,console.log(`${dataString.substring(-10)}`);,console.log(`${dataString.substring(-10\\, 11)}`);,console.log(`${dataString.substring(dataString.length - 5)}`);,console.log(`${dataString.substring(dataString.length - 5\\, dataString.length - 3)}`);,console.log(`${dataString.substring(dataString.length\\, dataString.length - 20)}`);,____________________________________________,Substr,console.log(`${dataString.substr(0)}`);,console.log(`${dataString.substr(0\\, 11)}`);,console.log(`${dataString.substr(dataString.length)}`);,console.log(`${dataString.substr(-5)}`);,console.log(`${dataString.substr(-5\\, 2)}`);,_________________________________________________________________________________,_________________________________________________________________________________,تقرار الاسترانج,Repeat,console.log(`${dataString.repeat(2)}`);,_________________________________________________________________________________,_________________________________________________________________________________, تحويل الاسترانج الى اراى,Split ,console.log(`${dataString.split()}`);,console.log(`${dataString.split('')}`);,console.log(`${dataString.split(' ' )}`);,console.log(`${dataString.split(' ' \\, 4)}`);,_________________________________________________________________________________,_________________________________________________________________________________,تحويل نوع البيانات الى استرانج,toString,console.log(`${dataString.toString()}`);,____________________________________________,String,console.log(`${String(dataString)}`);,_________________________________________________________________________________,_________________________________________________________________________________,تغير كلمة فى الاسترانج بى كلمة جديدة,Replace,console.log(`${dataString.replace(\"Old Word\"\\, \"New Word\")}`);,console.log(`${dataString.replace(/Word/i\\, \"New Word\")}`);,console.log(`${dataString.replace(/Word/g\\, \"New Word\")}`);,console.log(`${dataString.replace(/Word/gi\\, \"New Word\")}`);,_________________________________________________________________________________,_________________________________________________________________________________,التعامل مع الكيبارد,  بيراجع الحرف رقمو كام فى الكيبارد,CharCodeAt,console.log(`${dataString.charCodeAt(0)}`);,(function () {'use strict';if (dataString.charCodeAt(0) == 84) {console.log('Yas It Is The Alphabet');} else {console.log('No It Isn t The Alphabet');}})();,(function () {'use strict';dataString.charCodeAt(0) == 84 ? console.log('Yas It Is The Alphabet') : console.log('No It Isn t The Alphabet');})();,(() => {\"use strict\";if (dataString.charCodeAt(0) == 84) {  console.log(\"Yas It Is The Alphabet\");} else {  console.log(\"No It Isn t The Alphabet\");}})();,____________________________________________,كتابة الاسترانج بى الارقام,FromCharCode,console.log(`${String.fromCharCode(72\\, 111\\, 115\\, 115\\, 97\\, 109)}`);|}"
+    ],
+    "description": "Javascript string"
+  },
+  "Javascript Array ": {
+    "prefix": "js array ",
+    "body": [
+      "${1|طريقة كتابة الاراى,let dataArray = [ 'Html'\\, 'Css'\\,'Javascript'];,______________________________________________________________________,طريقة الوصول الى عنصر من عناصر الاراى و كمان الوصول الى الى حاجة جواه,console.log(dataArray[0]);,console.log(dataArray[0][1]);,______________________________________________________________________,طريقة تغير عنصر من عناصر الاراى,dataArray[0] = 'Html5';,______________________________________________________________________,طريقة اضافة اخار عنصر فى الاراى بطرية دينماكية,dataArray[dataArray.length] = 'Firebase';,______________________________________________________________________,طريقة تحديث اخر قيمة دينماتك,dataArray[dataArray.length - 1] = 'Firebase';,______________________________________________________________________,التحقق من الاراى هلى هى اراى والنتيجة باليان Boolean,console.log(Array.isArray(dataArray));,______________________________________________________________________,عدد العناصر اللى فى الاراى,console.log(dataArray.length);,التحكم فى عدد عناصر الاراى اللى هيخرجو,dataArray.length = 4;,console.log(dataArray.slice(0\\, 4));,______________________________________________________________________,Unshift اضافة عنصر فى الاراى فى الاول,dataArray.unshift('Html5');,______________________________________________________________________,push اضافة عنصر فى الاراى فى الاخر,dataArray.push('Html5');,______________________________________________________________________,Shift ازالة اول عنصر من عناصر الاراى,dataArray.shift();______________________________________________________________________,Pop ازالة اخر عنصر من عناصر الاراى,dataArray.pop();,______________________________________________________________________,البحث فى الاراي IndexOf & LastIndexOf & Includes,console.log(dataArray.indexOf(\"Vue\"));,console.log(dataArray.indexOf('Vue'\\, 2));,console.log(dataArray.indexOf('Vue'\\, 4));,console.log(dataArray.lastIndexOf('Vue'));,console.log(dataArray.lastIndexOf('Vue'\\, 3));,console.log(dataArray.lastIndexOf('Vue'\\, -5));,console.log(dataArray.includes('Vue'));,console.log(dataArray.includes('Vue'\\, 1));,console.log(dataArray.includes('Vue'\\, 4));,if (dataArray.indexOf('Bootstrap') === -1) {console.log('Not Found');},______________________________________________________________________,ترتيب عناصر الاراى Sort & Reverse,dataArray.sort();,dataArray.reverse();,console.log(myFriends.sort().reverse());,______________________________________________________________________,اخراج شريحة من الاراى,console.log(dataArray.slice(0\\, 2));,اخراج شريحة من الاراى و كمان البداية و مسح من الاراى و اضافة فى الاراى,dataArray.splice(0\\, 1\\, \"Html5\");,______________________________________________________________________,دامج الاراى,let allLang = oldLang.concat(newLang);,تجميع الاراى و تحويلها الى استرنج,dataArray.join(\" \");|}"
+    ],
+    "description": "Javascript object"
+  },
+  /* 
+  Todo ***************** Data Type With Lodash ***************** 
+  */
+  "Javascript String Lodash": {
+    "prefix": "js string lodash",
+    "body": [
+      "${1|________________________________________________________________________________,________________________________________________________________________________,________________________________________________________________________________,إزالة علامات التشكيل أحرف لاتينية,_.deburr(`${dataString}`);,________________________________________________________________________________, البحث فى النص للتحقق مما إذا كانت النص يبدا بي شياء محددة الحرروف حساسة,_.startsWith(`${dataString}`\\, \"Y\");,_.startsWith(`${dataString}`\\, \"Y\" \\, 2);,للتحقق مما إذا كانت النص ينتهى بي شياء محددة الحرروف حساسة,_.endsWith(`${dataString}`\\, \"Y\");,\\_.endsWith(`${dataString}`\\, \"Y\" \\, 2);,________________________________________________________________________________,تحويل الأحرف \"&\" و \"<\" و \">\" و \"\" \"و\" \"\" في النص إلى كيانات HTML المقابلة لها,_.escape(`${dataString}`);,________________________________________________________________________________,طريقة الكتابة النص,تحويل النص الى حروف كبيرة ,_.upperCase(`${dataString}`);,تحويل النص ككل إلى أحرف كبيرة ,_.toUpper(`${dataString}`);,تحويل النص الى كلمة واحدة وكل كلمة الحرف الاول كبتال,_.camelCase(`${dataString}`);,تحويل اول حرف الى حرف كابتال,_.startCase(`${dataString}`);,تحويل اول حرف الى حرف كابتال,_.upperFirst(`${dataString}`);,____________________________________,تحويل النص ككل إلى أحرف صغيرة ,_.toLower(`${dataString}`);,تحويل الحرف الأول من النص إلى أحرف صغيرة,_.lowerFirst(`${dataString}`);,____________________________________,تحويل النص الى طريقة الكتابة الكباب كيس,_.kebabCase(`${dataString}`);,تحويل النص الى طريقة الكتابة snake case,_.snakeCase(`${dataString}`);,____________________________________,تحويل الحرف الأول من النص إلى أحرف كبيرة والباقي إلى أحرف صغيرة,_.capitalize(`${dataString}`);,______________________________________________________________________,مسافات فى النص شمال و يمين از كان المسافة اقصر من النص مبيضفش مسافة,لجانبين الأيمن والأيسر,_.pad(`${dataString}`, 1);,الجانب الأيمن ,_padEnd(`${dataString}`\\, 1);,الجانب الأيسر ,_.padStart(`${dataString`\\, 1);,______________________________________________________________________,تقرار الاسترانج,_.repeat(`${dataString}`\\, 1);,_.repeat(`${dataString}`\\, 2);,بيراجع الاسترانج فاضية,_.repeat(`${dataString}`\\, 0);,______________________________________________________________________,استبدال التطابق فى النص بى القيمة الجديدة,_.replace(`${dataString}`\\,'Fred'\\, 'Barney');,// => 'Hi Barney',______________________________________________________________________,تحويل النص الى اراى وكمان محتاج كام عنصر فى الاراى,_.split(`${dataString}`\\, \" \"\\, 2);,________________________________________,_.words(`${dataString}`);,_.words(`${dataString}`\\, /[^, ]+/g);,______________________________________________________________________,يزيل المسافات البادئة والزائدة أو الأحرف المحددة من النص,_.trim(`{dataString}`);,_.trim(`${dataString}`\\, '-');,يزيل المسافة الزائدة أو الأحرف المحددة من السلسلة من البداية,_.trimStart(`${dataString}`);,_.trimStart(`${dataString}`\\, '-');,يزيل المسافة الزائدة أو الأحرف المحددة من السلسلة من النهاية,_.trimEnd(`${dataString}`);,_.trimEnd(`${dataString}`\\, '-');,______________________________________________________________________,يقطع النص إذا كانت أطول من النص المحدد. يتم استبدال ...,_.truncate(`${dataString}`\\,{'length': 24\\, 'separator': ' '});,______________________________________________________________________,تحويل علامات ال hTML الى علامات قابة للقراه فى الصفحة زاى علامة الاكبر من,_.unescape(`${dataString}`);|}"
+    ],
+    "description": "Javascript string"
+  },
+  "Javascript Array Lodash": {
+    "prefix": "js array lodash",
+    "body": [
+      "${1|_________________________________________________________________,_________________________________________________________________,بيرجع الاراى متقسمه عناصر اراى بى العداد,_.chunk(`${dataArray}`\\, 2);,_________________________________________________________________,ازالة القيمة الفارغة null false undefined 0 ,_.compact(dataArray);,_________________________________________________________________,دمج مجموعة من الاراى,_.concat(dataArray\\, dataArray1);,_________________________________________________________________,ازالة العناصر من البداية ينشئ شريحة من مصفوفة مع,_.drop(dataArray);,_.drop(dataArray\\, 2);,_.dropRight(dataArray);,_.dropRight(dataArray\\, 2);,ازالة من الاراى العناصر التى تعطيهالة ,_.pull(dataArray\\, 'a');,_.pull(dataArray\\, 'a'\\, 'c');,_.pullAll(dataArray\\, ['a']);,_.pullAll(dataArray\\, ['a'\\, 'c']);,بيرجع القيم اللى اتعملها حزف,_.pullAt(dataArray\\, [1\\, 3]);,_________________________________________________________________,يملأ عناصر المصفوفة بقيمة من البداية إلى النهاية,_.fill(dataArray\\, 'x');,_.fill(dataArray\\, 'x'\\, 1\\, 5);,_________________________________________________________________,الحصول على اول عنصر فى الاراى,_.head(dataArray);,الحصول على اخر عنصر فى الاراى,_.last(dataArray);,الحصول على شريحة مت الاراى او لول عنصر من غير قيمة, و لو عاوز عدد معين من عناصر الاررى بتكتب عاوز اد اية,_.take(dataArray);,_.take(dataArray\\, 0);,_.take(dataArray\\, 5);,_.take(dataArray\\, 3);,_.takeRight(dataArray);,_.takeRight(dataArray\\, 0);,_.takeRight(dataArray\\, 5);,_.takeRight(dataArray\\, 3);,_________________________________________________________________,الحصول على  جميع عناصر الاراى ما عدا اول عنصر,_.tail(dataArray);,_________________________________________________________________,الحصول على  جميع عناصر الاراى ما عدا اخر عنصر,_.initial(dataArray);,_________________________________________________________________,تجميع الاراى و تحويلها الى استرانج,_.join(dataArray\\, \" \");,_________________________________________________________________,الوصول الى عنصر من عناصر الاراى,_.nth(array\\, 1);,_.nth(array\\, -2);,_________________________________________________________________,فانكشان بترجع من الاراى العدد الزوجى,_.remove(dataArray\\, function (n) {return n % 2 == 0;});,_________________________________________________________________,بيعكس الاراى,_.reverse(dataArray);|}"
+    ],
+    "description": "Javascript array lodash"
+  },
+  "Javascript Object Lodash": {
+    "prefix": "js object lodash",
+    "body": [
+      "${1|_________________________________________________________________,البحث فى الاوبجكت بيراجع رقم العنصر فى الاوبجكت و لو مش موجود بيراجع -1,_.findIndex(users\\, function(o) { return o.user == 'Hossam'});,_.findIndex(users\\, { user: \"fred\"\\, active: false });,_.findIndex(users\\, [\"active\"\\, false]);,_.findIndex(users\\,'active'); });,_.findLastIndex(users\\, function(o) { return o.user == 'Hossam'});,_.findLastIndex(users\\, { user: \"fred\"\\, active: false });,_.findLastIndex(users\\, [\"active\"\\, false]);,_.findLastIndex(users\\,'active'); });,_________________________________________________________________,ازالة من الاوبجكت ,_.dropRightWhile(users\\, function(o) { return !o.active; });,_.dropRightWhile(users\\, { 'user': 'pebbles'\\, 'active': false });,_.dropRightWhile(users\\, ['active'\\, false]);,_.dropRightWhile(users\\, 'active');,_.dropWhile(users\\, function(o) { return !o.active; });,_.dropWhile(users\\, { 'user': 'pebbles'\\, 'active': false });,_.dropWhile(users\\, ['active'\\, false]);,_.dropWhile(users\\, 'active');,حزف جميع القيم مع معيار ال x 1 ة 3,.pullAllBy(dataObject\\, [{ x: 1 }\\, { x: 3 }]\\, \"x\");,_________________________________________________________________,الحصول من الاوبجكت على العناصر الغير اكتاف,_.takeWhile(users\\, function (o) {return !o.active;});,الحصول على عنصر معين,_.takeWhile(users\\, { user: \"barney\"\\, active: false });,الحصول على مجموعة من العناصر على حسب الحالة,_.takeWhile(users\\, [\"active\"\\, false]);|}"
+    ],
+    "description": "Javascript object"
+  },
+  /* 
+  Todo ************************ Console ************************ 
+  */
+  "Console وحدة التحكم": {
+    "prefix": "js console",
+    "body": [
+      "${1|_________________________________________________________________,للإخراج العام لمعلومات التسجيل,console.log();,_________________________________________________________________,إخراج رسالة خطأ,console.error();,_________________________________________________________________,يعرض بيانات جدولية كجدول,console.table();,_________________________________________________________________,تظهر رسالة خطأ على وحدة التحكم إذا كانت الحالة خاطئة. , إذا كانت العبارة صحيحة فلن يظهر أي شيء,console.assert('Hello' === 'Hello'\\, 'The Strings Are Not Equal');,_________________________________________________________________,ستحذف جميع رسائل وحدة التحكم,console.clear();,_________________________________________________________________,سجل عدد مرات استدعاء هذا الخط بالتسمية المحددة,console.count();,_________________________________________________________________,تُستخدم لإعادة تعيين عدد التسمية المحددة التي تم تمريرها إليها كمعامل,console.count();\nconsole.countReset();,تعمل طريقة time على تشغيل مؤقت يمكنك استخدامه لتتبع المدة التي تستغرقها العملية , أنت تعطي اسمًا فريدًا لكل عداد , وعندما تتصل بـ timeEnd بنفس الاسم ، سيخرج المتصفح الوقت بالمللي ثانية الذي انقضى منذ بدء المؤقت,console.time();\nfor (let i = 0; i < 10; i++) {\n  // Some code \n console.log(i); \n}\nconsole.timeEnd();,console.time('Loop');\nfor (let i = 0; i < 10; i++) {\n  // Some code \n console.log(i); \n}\nconsole.timeEnd('Loop');,_________________________________________________________________,تقوم طريقة group بإنشاء مجموعة مضمنة جديدة في سجل وحدة تحكم الويب., هذه المسافة البادئة بعد رسائل وحدة التحكم بمستوى إضافي حتى يتم استدعاء groupEnd ,console.group();console.log('First level');console.group();console.log('Second level');console.group();console.log('Third level');console.groupEnd();,_________________________________________________________________,تنصيقات css فى console log,console.log('Hello From %cJS %cFile'\\, 'color: red; font-size: 40px'\\,'color: blue; font-size: 40p');|}"
+    ],
+    "description": "Console وحدة التحكم "
+  },
+  "خط فاصل ": {
+    "prefix": "js console line",
+    "body": [
+      "let line = \"📌\".repeat(30);",
+      "console.log(` %c\\${line} `, \"color: #1cd07c; font-size: 16px\");"
+    ],
+    "description": "خط فاصل "
+  },
+  /* 
+  Todo ************************ If ************************ 
+  */
+  "Javascript If ": {
+    "prefix": "js if",
+    "body": [
+      "${1|_________________________________________________________________,If اساسى,if (condition) {\n  // Code If True \n},if (condition) {\n  // Code If True \n} else {\n  // Code If False \n},if (condition) {\n  // Code If True \n} else if (condition2) {\n  // Code If Not True \n} else {\n  // Code If False \n},_________________________________________________________________,Nested If الشروط متداخلة,if (condition) {\n  // Code If True \n} else if (condition2) {\n  // Code If Not True \n  // Nested If \n  if (conditionNested) { \n // Code If Nested True \n } else {\n  // Code If Nested False \n} \n} else {\n  // Code If False \n},_________________________________________________________________,الشورط كود للاف كندشان,// Condition ? true : false;,// Condition ? true : Condition2 ? ElsIf : Condition3 ? ElsIf : Else;,_________________________________________________________________,العوامل المنطقية Logical Operators,! Not لا تساوى,//Logical Operators \nif (condition != condition2) {\n  // Code If True \n},&& And تستخدم فى تطابق جميع الشروط,//Logical Operators \nif (condition && condition2) {\n  // Code If True \n}, \\|\\| Or تطابق شارط من الشروط,//Logical Operators \nif (condition \\|\\| condition2) {\n  // Code If True \n},_________________________________________________________________,Comparison Operators عوامل المقارنة,== بتقارن بين القيمة فقط,if (value1 == value2) {\n  // Code If True \n},!= بتقارن بين قيمتين هلى لا تساوى نفس القيمة,if (value1 != value2) {\n  // Code If True \n},=== بتقارن بين قيمتين و كمان نوع البيانات,if (value1 === value2) {\n  // Code If True \n},!== بتقارن بين قيمتين و كمان نوع البيانات هلى لا تساوى نفس القيمة,if (value1 !== value2) {\n  // Code If True \n},> اكبار من,if (value1 > value2) {\n  // Code If True \n},> اكبار من او يساوى,if (value1 >= value2) {\n  // Code If True \n},< اصغر  من,if (value1 < value2) {\n  // Code If True \n},< اصغر من او يساوى,if (value1 <= value2) {\n  // Code If True \n},_________________________________________________________________,Switch من انواع الكنترول للحالات,تستخدم اكتار فى الحالات اللى فيها شروط كتيرة جدا ,زاى الشهر فية 30 يوم و كل يوم لية الحالة الخاصة بية,switch (day) {default:console.log('Unknown Day');break;case 0:console.log('Saturday ');break;case 1:console.log('Sunday');break;case 2:console.log('Monday');break;case 3:console.log('Tuesday');break;case 4:console.log('Wednesday');break;case 5:console.log('Thursday');break;case 6:console.log('Friday');break;}|}"
+    ],
+    "description": "Javascript if"
+  },
+  /* 
+  Todo ******* Comparison Operators عوامل المقارنة ******* 
+  */
+  "Comparison Operators عوامل المقارنة": {
+    "prefix": "js Comparison Operators عوامل المقارنة",
+    "body": [
+      "${1|_________________________________________________________________,Comparison Operators عوامل المقارنة,_________________________________________________________________,اكبار من,>,_________________________________________________________________,اكبار من او يساوى,>=,_________________________________________________________________,اصغر من,<,_________________________________________________________________,اصغر من او يساوى,<=,_________________________________________________________________,بتقارن بين القيمة فقط,==,_________________________________________________________________,بتقارن بين قيمتين هلى لا يساوى نفس القيمة,!=,_________________________________________________________________,بتقارن بين قيمتين و كمان نوع البيانات,===,_________________________________________________________________,بتقارن بين قيمتين و كمان نوع البيانات هلى لا يساوى نفس القيمة,!==|}"
+    ],
+    "description": "Javascript if"
+  },
+  /* 
+  Todo ******* Comparison Operators عوامل المنطقية ******* 
+  */
+  "Comparison Operators عوامل المنطقية": {
+    "prefix": "js Logical Operators عوامل المقارنة",
+    "body": [
+      "${1|_________________________________________________________________,Logical Operators العوامل المنطقية,_________________________________________________________________, Not لوحدها بتنفى الحالة اللى انت فيها يعنى بتحول الترو لفلص و الفلص لترو,!,_________________________________________________________________, And تستخدام فى تطابق جميع الشروط,&&,_________________________________________________________________, Or تطابق شارط من الشروط,\\|\\||}"
+    ],
+    "description": "Javascript Logical Operators عوامل المقارنة"
+  },
+
+  /* 
+  Todo ************************ If ************************ 
+  */
+  "Javascript For ": {
+    "prefix": "js for loop",
+    "body": [
+      "${1|_________________________________________________________________,تكرر الحلقات نفس كتلة الكود حتى يتم استيفاء شرط معين,Basic For,for (let i = 0; i < 10; i++) {\n  console.log(i);\n},_________________________________________________________________,ميثال اراى فيها استرانج و ارقام و انا عاوز اخراج الاسترنج بس,let dataArray = [1\\, 2\\, 3\\, 'Html'\\, 'Css'\\, 'Javascript'\\, 'Vue'];let onlyNames = [];for (let i = 0; i < dataArray.length; i++) {if (typeof dataArray[i] === 'string') {onlyNames.push(dataArray[i]);}}console.log(onlyNames);,_________________________________________________________________,ميثال اراى فيها استرانج و ارقام و انا عاوز اخراج الارقام بس,let dataArray = [1\\, 2\\, 3\\, 'Html'\\, 'Css'\\, 'Javascript'\\, 'Vue'];let onlyNumbers = [];for (let i = 0; i < dataArray.length; i++) {if (typeof dataArray[i] === 'number') {onlyNumbers.push(dataArray[i]);}}console.log(onlyNumbers);,_________________________________________________________________,النستاد لوب هو اللوب اللى جوه تقرار اللوب الفرعي ,  بعد كل عنصر من عناصر اللوب الاساسى,let products = ['Keyboard'\\, 'Mouse'];let colors = ['Red'\\, 'Green'\\, 'Black'];for (let i = 0; i < products.length; i++) {console.log(products[i]);for (let j = 0; j < colors.length; j++) {console.log(`- ${colors[j]}`);}},_________________________________________________________________,Break بيوقف عمل اللوب يعنى مبيكملش اللوب بيقاف عند الشرط اللى قى الكندشان,let dataArray = ['Keyboard'\\, 'Mouse'\\, 'Pen'\\, 'Pad'\\, 'Monitor'];for (let i = 0; i < dataArray.length; i++) {if (dataArray[i] === 'Pen') {break;}console.log(dataArray[i]);},المثال ده بيطبع العنصر اللى فى الشرط وبيوقف اللوب لانو الطباعة قبل الشرط,let dataArray = ['Keyboard'\\, 'Mouse'\\, 'Pen'\\, 'Pad'\\, 'Monitor'];for (let i = 0; i < dataArray.length; i++) {console.log(dataArray[i]);if (dataArray[i] === 'Pen') {break;}},_________________________________________________________________,Continue بيكمال عمل اللوب بس القيم اللى فى الشرط هى اللى بتتشال من الللوب,let products = ['Keyboard'\\, 'Mouse'\\, 1\\, 2\\, 'Pen'\\, 'Pad'\\, 3\\, 4\\, 'Monitor'];for (let i = 0; i < products.length; i++) {if (typeof products[i] === 'number') {continue;}console.log(products[i]);},_________________________________________________________________,Label هو تسميه للواب,تقدار عن طريقة تتحكم فى اللوب زاى ال Break و ال Continue,let products = ['Keyboard'\\, 'Mouse'\\, 'Pen'];\nlet colors = ['Red'\\, 'Green'\\, 'Black'];\n// mainLoop Name Of Loop Parent\nmainLoop: for (let i = 0; i < products.length; i++) {\nconsole.log(products[i]);\n// nestedLoop Name Of Loop Child\nnestedLoop: for (let j = 0; j < colors.length; j++) {\nif (colors[j] === 'Green') {\n// break;\n// break nestedLoop;\nbreak mainLoop;\n}console.log(`- ${colors[j]}`);}}|}"
+    ],
+    "description": "Javascript For Loop"
+  },
+
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////// Github //////////////////////
+  ///////////////////////////////////////////////////////
+  "git help": {
+    "prefix": "git help",
+    "body": [
+      "/**",
+      " * ? Github Help",
+      " *",
+      " * ? CLONE REPOSITORY",
+      " * نثخ المستودع من الجات اب",
+      " * Todo : => git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? Status",
+      " * مراجعة التغييرات",
+      " * Todo : => git status",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? GIT ADD",
+      " * Staging Area أضف جميع الملفات الجديدة والمتغيرة إلى",
+      " * Todo : => git add *",
+      " * Todo : => git add File-Name",
+      " * Todo : => Viscode",
+      " * !      => Icone Git And Click Write Click And choose Stage Changes",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? GIT RESET",
+      " * ازالة ملف من Staging Area",
+      " * يقوم هذا الأمر بازالة ملاف من",
+      " * (Staging Area)",
+      " *  لكى يتم عدام اضافته الملفات مع الملفات",
+      " *  اللتى سوف يتمم اضافتها الى المشروع على",
+      " * Github",
+      " * Todo: => git reset head FileName",
+      " * Todo : => Viscode",
+      " * !      => Icone Git And Click Write Click And choose UnStage Changes",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? GIT COMMIT",
+      " * يقوم هذا الأمر بارسال الملاف من",
+      " *  ( Staging Area ) الى ( Local Repo )",
+      " * قم بإنشاء",
+      " * ( New Commit )",
+      " *  يحتوي على المحتويات الحالية للفهرس",
+      " * ورسالة السجل المحددة التي تصف التغييرات.",
+      " * Todo: => git commit -m \"Commit Explain Code\"",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? GIT BRANCH",
+      " * يقوم هذا الأمر طباعة جميع الفروع الموجودة فى",
+      " * ( Local Repo )",
+      " * Todo: => git branch",
+      " *",
+      " * الامر ده بيجيب جميع الفروع الموجودة فى المشروع",
+      " * Todo: => git branch -a",
+      " *",
+      " * انشاء فارع جديد",
+      " * Todo: => git branch newBranch",
+      " *",
+      " * الدخول فى الفرع الذى تم انشائة",
+      " * Todo: => git checkout newBranch",
+      " *",
+      " * حذف فرع من الفروع",
+      " * -d",
+      " *  بيحزاف التعديلات التى تم عمل",
+      " * Marging",
+      " *  ليها",
+      " * Todo: => git branch -d newBranch",
+      " *",
+      " *",
+      " * حذف فرع من الفروع",
+      " * -D",
+      " * بيحزاف التعديلات التى تم عمل",
+      " * Marging",
+      " * ليها لو لم يتم عمل لها",
+      " * Marg",
+      " * Todo: => git branch -D newBranch",
+      " *",
+      " * انشاء فارع و الدخول جوه الفرع الجديد",
+      " * Todo: => git checkout -b newBranch",
+      " *",
+      " * للتنقال بين الفروع",
+      " * Todo: => git checkout branchName",
+      " *",
+      " * علشان تغير اسم الفارع اللى انت انشاتو",
+      " * Todo: => git branch -m NewName",
+      " *",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? GIT REMOTE",
+      " * يقوم هذا الأمر طباعة",
+      " * ( Remote Name )",
+      " * الخاص بى المشروع على",
+      " * ( Github )",
+      " * Todo: => git remote",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? GIT PUSH",
+      " * يقوم هذا الأمر بارسال الملاف من",
+      " * ( Local Repo ) الى ( Remote Repo )",
+      " * ارسال الملفات من مساحة العمال الخاصة بى المشروع على",
+      " * ( Pc )",
+      " *  الى المشروع على",
+      " * ( Github )",
+      " * Todo: => git push origin main",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? GIT PULL",
+      " * دمج التغييرات من مستودع بعيد إلى الفرع الحالي",
+      " * تحميل جميع التغيرات اللتى تامت فى",
+      " * ( Repository )",
+      " * ( فى حالة لو شغال مع Team )",
+      " *  ودمج التغييرات فى المشروع على",
+      " * ( Pc )",
+      " * Todo: => git pull",
+      " * Todo: => git pull origin",
+      " * Todo: => git pull origin main",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? GIT CONFIG",
+      " *",
+      " * قائمة الاعدادات الخاصة بى ال",
+      " * ( Git )",
+      " * Todo: => git config -l",
+      " * Todo: => git config --list",
+      " *",
+      " * يقوم هذا الامر بفتح الاعدادات",
+      " * ( Manual )",
+      " *  فى المتصفح",
+      " * Todo: => git help config",
+      " *",
+      " * يقوم هذا الامر بعرض القيمة المطلوبة",
+      " * Todo: => git config --global user.email",
+      " *",
+      " * يقوم هذا الامر بتغير القيمة المطلوبة",
+      " * Todo: => git config --global user.email \"mail@gmail.com\"",
+      " *",
+      " * يقوم هذا الامر بعرض مصادار الملفات التى يتم جالب الاعدادات و البيانات منها",
+      " * Todo: => git config --l --show-origin",
+      " *",
+      " * يقوم هذا الامر بحذف القيمة المطلوب حذفها",
+      " * Todo: => git config --global --unset user.email",
+      " *",
+      " * يقوم هذا الامر بفتح مححر النصوص للتعديل",
+      " * فى ملف الاعدادات الخاصة بى ال",
+      " * ( Git )",
+      " * Todo: => git config --global --edit",
+      " *",
+      " * يقوم هذا الامر بخراج الكنفاج الموجود فى الجهاز",
+      " * Todo: => cat ~/.gitconfig",
+      " *",
+      " * ____________________________________",
+      " * ? ALIASES",
+      " * Aliases طريقة استخدام الاسم المستعار فى الاوامر",
+      " * بتكتاب اسم الاختصار اللى انت عاوز تعملو و",
+      " * بعدين بتكتب اسم الاملا اللى عمالو اختصار",
+      " * الالياس مش بيلغى الامر",
+      " * هو بيعمل اسم مستعار بس ممكن تكتب بى الامر عادى",
+      " *",
+      " * Todo: => git config --global alias.st status",
+      " *",
+      " * طريقة الاستخدام",
+      " * Todo: =>git st",
+      " *",
+      " * الامر اللي فيه مسافه بتكتبو بين ضابال كوت",
+      " * Todo: => git config --global alias.cm \"commit -m\"",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? PUBLIC KEY",
+      " *",
+      " *انشاء",
+      " * Public Key",
+      " * Todo: => ssh-keygen -t rsa -b 4096 -C \"YourEmail@example.com\"",
+      " *",
+      " * الامر دة بيجيب محتوى اى فيل",
+      " * Todo: => cat ~/.ssh/id_rsa.pub",
+      " *",
+      " * ! اضافة ال",
+      " * ! Public Key",
+      " * ! الى",
+      " * ! Github",
+      " * بتنسخ محتو الملف",
+      " * بتروح على الجات اب و على ال",
+      " * Seting => SSH and GPG Keys => New SSH Kay",
+      " *",
+      " *",
+      " * التواصل مع ال",
+      " * Public Key",
+      " * Todo: => ssh -T git@github.com",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? Repo From Existing Project",
+      " *",
+      " *  طريقة انشاء ريبو من الجهاز ورافع المشروع",
+      " *  على الجات اب لو امشروع موجود و جاهز بالفعل",
+      " *",
+      " *",
+      " * بتروح على الجات اب و بتعمال نيو ريبو",
+      " * متضفش ملاف",
+      " * ReadMe",
+      " * تبدا تاخد الاوامر و تتاكد انو انت على Ssh",
+      " *",
+      " * Todo: => git init",
+      " *",
+      " * اضافة الملف الجديد فى",
+      " * Staging Area",
+      " * Todo: => git add *",
+      " *",
+      " * انشاء كمانت على التغييرات التي تامت فى الملف",
+      " * Todo: => git commit -m \"Created The Main Project Structure\"",
+      " *",
+      " *  بتغيار البرانش من",
+      " *  Master الى Main",
+      " * Todo: => git branch -M main",
+      " *",
+      " * الامر داه بياخد الريبو اللى انت انشاتو و بيحطو على الريموات",
+      " * Todo: => git remote add origin git@github.com:LearnCodingEasy/reposName.git",
+      " *",
+      " * الامر داه بيرفاع الملاف على الجات اب",
+      " * و حرف اليو معناه يجيب اخر تعديلات من على الجات",
+      " * لانو انت لو شغال مع تيم و بيرفعو حجات يجيب",
+      " * اخر تعديلات تامت و بعدين يرفاع الملفات الجديدة اللى انت عملتها",
+      " * Todo: => git push -u origin main",
+      " * Todo: => git push -u origin master",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? MERGING",
+      " * علشان اعمال دامج بين البرانش الاساسى اللى فى الجات",
+      " * و الفارع اللى انا انشاتو",
+      " * بتدخال على الفارع الاساسى اللى فى الجات اب",
+      " * اللى هو المين او الماستار على حساب انت الفارع الاساسى ايه عنداك",
+      " *",
+      " *",
+      " *",
+      " * Todo: => git checkout -b newBranch",
+      " * Todo: => touch index.html",
+      " * Todo: => git add *",
+      " * Todo: => git commit -m \"Commit\"",
+      " * Todo: => git checkout main",
+      " *",
+      " * وبعدين بتكتب الامر ده و بتكتب اسم الفارع اللى انت انشاتو",
+      " * Todo: => git merge branchName",
+      " *",
+      " * تقدار تمسح الفرع بعد ما عملتلو",
+      " * Merge",
+      " * Todo: => git branch -d branchName",
+      " *",
+      " * ارسال الملفات من مساحة العمال الخاصة بى المشروع على",
+      " * ( Pc )",
+      " * الى المشروع على",
+      " * ( Github )",
+      " * Todo: => git push origin main",
+      " *",
+      " *",
+      " * ? __________________________________________",
+      " *",
+      " * ? طريقة انشاء اكتر من فرع",
+      " * ? و كل فرع لية التعديلات اللى بتبنى بيهء المشرو لاخرة",
+      " *",
+      " *",
+      " * Todo: => git checkout -b newBranch",
+      " * Todo: => touch index.html",
+      " * Todo: => git add *",
+      " * Todo: => git commit -m \"Commit\"",
+      " * Todo: => git push origin branchName",
+      " *",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? STASH",
+      " * Stash",
+      " *  هو مخباء لملفات انت مش عاوزها تترفع دلوات على المشروع",
+      " *  و فى نفس الواقت ميظهاروش فى امر الجات استيتاس",
+      " *  اللى بيعرفك ايه الجديد فى المشروع",
+      " *",
+      " * Todo: => touch BuildWebsite.txt",
+      " * Todo: => git add *",
+      " * Todo: => git stash",
+      " * Todo: => git pull origin main",
+      " * Todo: => git push origin main",
+      " *",
+      " * قامة الملفات الموجوده فى الصندوق",
+      " * Todo: => git stash list",
+      " *",
+      " *  فى حالة انو انا عاوز و انا بضيف الملف فى الصندوق عاوز",
+      " *  Save تاكسات يفكرتى ايه الملاف اللى فى الصندوق",
+      " * Todo: => git stash save \"Your Massage\"",
+      " *",
+      " * الامر ده بيجيب الملفات اللى انا خبيتها فى الصندوق",
+      " * علشان استخدما او ارفعها",
+      " * و امر الباب بيجيب اخر ملاف تم اضافتو فى الصندوق",
+      " * Todo: => git stash pop",
+      " *",
+      " *  الابلاي بيرجع اخر ملاف حتيطو فى الصندوق",
+      " *  بس بيسيبو فى الصندوق زاى ماهوة",
+      " * Todo: => git stash apply",
+      " *",
+      " * لو عاوز تجيب صندوق معين بى الايدي الخاص بيه",
+      " * Todo: => git stash pop stash@{1}",
+      " *",
+      " * لو عاوز تحذاف اخر صندوق",
+      " * Todo: => git stash drop",
+      " *",
+      " * لو عاوز تحذاف صندوق بي رقمو فى الصناديق",
+      " * Todo: => git stash drop stash@{1}",
+      " *",
+      " * امر الشاو بيجيب اخر ملاف تام تاخباته",
+      " * Todo: => git stash show",
+      " *",
+      " * لو عاوز تعراف الفيل اللى جوه الصندوق بتكتاب رقم الايدي",
+      " * Todo: => git stash show stash@{1}",
+      " *",
+      " * امر الكلير بيحزاف جميع الصناديق بى الملفات اللى جوها",
+      " * Todo: => git stash clear",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? CLEAN",
+      " *  حزف الملفات اللى زيادة فى المشروع",
+      " *",
+      " * الامر داه بيعرضلاك الملفات اللى انت هتحزفها",
+      " * لو انت نزلته من الاساجان ارياء",
+      " *",
+      " * لانو انت لو عاوز ترجاع ملاف الى الاستاجان اريا بترجعو قابل الحزف",
+      " * Todo: => git clean -n",
+      " *",
+      " * الامر ده بيحزاف الملفات اللى مش على الاستاجان اريا",
+      " * Todo: => git clean -f",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * ? Formatting Syntax",
+      " *",
+      " *",
+      " * ! Header",
+      " * Todo: => # The largest heading",
+      " * Todo: => ## The second largest heading",
+      " * Todo: => ###### The smallest heading",
+      " *",
+      " * ! Bold",
+      " * Todo: => **This is bold",
+      " * Todo: => This is bold**",
+      " * Todo: => __This is bold",
+      " * Todo: => This is bold__",
+      " *",
+      " * ! Italic",
+      " * Todo: => *This text is italicized*",
+      " * Todo: => _This text is italicized_",
+      " *",
+      " * ! Bold and nested italic",
+      " * Todo: => **This text is _extremely_ important**",
+      " *",
+      " * ! All bold and italic",
+      " * Todo: => ***All this text is important***",
+      " *",
+      " * ! Strike Through",
+      " * ! نص مشطوب علية",
+      " * Todo: => ~~This was mistaken text~~",
+      " *",
+      " * ! Subscript",
+      " * ! نصر مكتوب لتحت النص العادي",
+      " * Todo: => <sub>This is a subscript text</sub>",
+      " *",
+      " * ! Superscript",
+      " * ! نصر مكتوب لفوق النص العادي",
+      " * Todo: => <sup>This is a superscript text</sup>",
+      " *",
+      " * ! Quoting Text",
+      " * ! علامة نقلا عن النص",
+      " * Todo: => > Text that is a quote",
+      " *",
+      " * ! Quoting Code",
+      " * ! علامة نقلا عن كود",
+      " * Todo: => > Use `git status` to list all new",
+      " *",
+      " * ! Links",
+      " * Todo: => [GitHub Pages](https://pages.github.com/)",
+      " *",
+      " * ! Links In Your Repository",
+      " * Todo: => [Contribution guidelines for this project](docs/CONTRIBUTING.md)",
+      " *",
+      " * ! Images",
+      " * Todo: => ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)",
+      " *",
+      " * ! Lists",
+      " * Todo: => - George Washington",
+      " * Todo: => - John Adams",
+      " * Todo: => - Thomas Jefferson",
+      " *",
+      " * ! Lists with a number",
+      " * Todo: => 1. James Madison",
+      " * Todo: => 2. James Monroe",
+      " * Todo: => 3. John Quincy Adams",
+      " *",
+      " * ! Nested Lists",
+      " * Todo: => 1. First list item",
+      " * Todo: =>    - First nested list item",
+      " * Todo: =>      - Second nested list item",
+      " *",
+      " * ! Task lists",
+      " * Todo: => - [x] #739",
+      " * Todo: => - [ ] https://github.com/octo-org/octo-repo/issues/740",
+      " * Todo: => - [ ] Add delight to the experience :tada:",
+      " *",
+      " * ! Using Emoji",
+      " * Todo: => @octocat :+1: This PR merge! :shipit:",
+      " *",
+      " * ! Copy Build Project",
+      " * Todo: => ```",
+      " * Todo: => npm install",
+      " * Todo: => ```",
+      " *",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " *  ? IGNORING",
+      " * تجاهل ملفات او فلدرات علشان متترفعش مع ملفات المشروع",
+      " *",
+      " * .gitignore بتنشاء ملاف ال",
+      " * Todo: => touch .gitignore",
+      " *",
+      " * Vscode فتح الملاف فى برنامج",
+      " * Todo: => code .gitignore",
+      " *",
+      " * داخل الملف",
+      " * جميع الملفات اللى امتداده",
+      " * .Log",
+      " * مش هتترفع مع المشروع",
+      " * Todo: => *.log",
+      " *",
+      " * فى حالة انو انا عاوز ملاف امتدادو",
+      " * .Log",
+      " *  يترفع مع المشروع بتضيف الكود ده",
+      " * Todo: => !fileName.log",
+      " *",
+      " * تقدار تضيف ملف ميترفعش مع المشروع و ميشفوش فى امر",
+      " * Git Stats",
+      " * Todo: => node_modules/",
+      " *",
+      " *  تقدار تكتاب اسم ملف بعينو هو ده اللى ميترفعش",
+      " * Todo: => fileName.text",
+      " *",
+      " *  تقدار تتجاهل ملاف موجود فى ال",
+      " *  Gitignore",
+      " *  و تضيفو فى ملفات المشروع على ال",
+      " *  Github",
+      " * Todo: => git add --force fileName.text",
+      " * Todo: => git add -f fileName.text",
+      " *",
+      " *",
+      " * _________________________________________________________________",
+      " * _________________________________________________________________",
+      " *",
+      " * Todo: =>",
+      " *",
+      " *",
+      " */",
+      ""
+    ],
+    "description": "git help"
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////// Global //////////////////////
+  ///////////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////// Comment //////////////////////
+  ///////////////////////////////////////////////////////
+
+  "js comment": {
+    "prefix": "comment",
+    "body": [
+      "$BLOCK_COMMENT_START Start Comment $BLOCK_COMMENT_END",
+      "",
+      "$BLOCK_COMMENT_START End Comment $BLOCK_COMMENT_END"
+    ],
+    "description": "Start & End Comment  "
+  },
+  "html comment": {
+    "prefix": "html comment",
+    "body": [
+      "$BLOCK_COMMENT_START Start Comment $BLOCK_COMMENT_END",
+      "",
+      "$BLOCK_COMMENT_START End Comment $BLOCK_COMMENT_END"
+    ],
+    "description": "Start & End Comment "
+  },
+  "scss comment": {
+    "prefix": "scss comment",
+    "body": [
+      "$BLOCK_COMMENT_START Start Comment $BLOCK_COMMENT_END",
+      "",
+      "$BLOCK_COMMENT_START End Comment $BLOCK_COMMENT_END"
+    ],
+    "description": "Start & End Comment  "
+  },
+  "test snippets 1": {
+    "prefix": "test snippets 1",
+    "body": ["console.log('Code');"],
+    "description": "test snippets 1  "
+  },
+  "test snippets 2": {
+    "prefix": "test snippets 2",
+    "body": ["console.log(`$1`);"],
+    "description": "test snippets 1  "
+  },
+  "test snippets 3": {
+    "prefix": "test snippets 3",
+    "body": ["console.log(`$Code`);"],
+    "description": "test snippets 1  "
+  },
+  "test snippets 4": {
+    "prefix": "test snippets 4",
+    "body": ["console.log(`${1:Code}`);"],
+    "description": "test snippets 1  "
+  },
+  "test snippets 5": {
+    "prefix": "test snippets 5",
+    "body": ["console.log(`${1:Code}`);", "console.log(`${2:Code}`);"],
+    "description": "test snippets 1  "
+  },
+  "test snippets 6": {
+    "prefix": "test snippets 6",
+    "body": ["console.${1|log,error|}(`Code`);"],
+    "description": "test snippets 1  "
+  },
+  "test snippets 7": {
+    "prefix": "test snippets 7",
+    "body": ["console.time(`$1`);", "", "console.timeEnd(`$1`);"],
+    "description": "test snippets 1  "
+  }
+}
