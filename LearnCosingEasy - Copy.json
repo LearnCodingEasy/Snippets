@@ -52,7 +52,7 @@
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   /////////////////////////////////////////////
-  /*******		         	HTML		          ******/
+  /*******		       	HTML		          ******/
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   /////////////////////////////////////////////
@@ -89,6 +89,18 @@
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   /////////////////////////////////////////////
+  /* 
+  Todo *********** Cdn *********** 
+  */
+  "cdn Font Awesome V5.15.4": {
+    "prefix": "pug cdn fontawesome",
+    "body": [
+      "// =============== Font Awesome V5.15.4 ===============",
+      "// =============== https://fontawesome.com/ ===============",
+      "link(rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\")"
+    ],
+    "description": "cdn Font Awesome V5.15.4"
+  },
   "cdn icon box icon": {
     "prefix": "pug cdn icon box icon",
     "body": [
@@ -119,11 +131,11 @@
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   /////////////////////////////////////////////
-  /*******		         	Css		          ******/
-  /////////////////////////////////////////////
-  /////////////////////////////////////////////
-  /////////////////////////////////////////////
-  /////////////////////////////////////////////
+  /*
+  Todo: *******************************
+  Todo: ******		   	Css			   ******
+  Todo: *******************************
+  */
   /* 
   Todo *********** Grid *********** 
   */
@@ -134,10 +146,6 @@
     ],
     "description": "Html img src"
   },
-  /////////////////////////////////////////////
-  /////////////////////////////////////////////
-  /////////////////////////////////////////////
-  /////////////////////////////////////////////
   /* 
   Todo *********** Ask *********** 
   */
@@ -146,20 +154,6 @@
     "body": ["//how to center a div?"],
     "description": "Css Ask"
   },
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ////////////////////// Element ////////////////////////
-  ///////////////////////////////////////////////////////
   /* 
   Todo *********** Scroll Bar *********** 
   */
@@ -177,40 +171,17 @@
     ],
     "description": "scrollbar لون الاسكرال"
   },
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  //////////////////////// Test /////////////////////////
-  ///////////////////////////////////////////////////////
+  /* 
+  Todo *********** Border Test *********** 
+  */
   "border test": {
     "prefix": "css bt ",
     "body": ["border: 0.5rem solid #f00;"],
     "description": "border test"
   },
-
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  //////////////////////// Media ////////////////////////
-  ///////////////////////////////////////////////////////
+  /*
+  Todo: **********	Css	Media			   *********
+  */
   "جميع الشاشات": {
     "prefix": "css media all",
     "body": [
@@ -231,39 +202,17 @@
     ],
     "description": "جميع الشاشات"
   },
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ////////////////////// Comment ////////////////////////
-  ///////////////////////////////////////////////////////
+  /*
+  Todo: **********	Css	Comment			   *********
+  */
   "كمانت ": {
     "prefix": "css comment",
     "body": ["/* My Style */"],
     "description": "كمانت "
   },
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  /////////////////////// Color /////////////////////////
-  ///////////////////////////////////////////////////////
+  /*
+  Todo: **********		Css Color			   *********
+  */
   "لون مكتبة Vue 1": {
     "prefix": "css color vue ",
     "body": ["#42b883"],
@@ -308,7 +257,11 @@
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   /////////////////////////////////////////////
-  /*******		   	Vue			   ******/
+  /*
+  Todo: *******************************
+  Todo: ******		   	Vue			   ******
+  Todo: *******************************
+  */
   "بداية صفحة جديدة": {
     "prefix": "vue new page",
     "body": [
@@ -322,7 +275,7 @@
     ],
     "description": "بداية صفحة جديدة"
   },
-  "بداية صفحة للشارح": {
+  "بداية صفحة الشرح": {
     "prefix": "vue start component explain",
     "body": [
       "<template>",
@@ -560,7 +513,9 @@
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   /////////////////////////////////////////////
-  /*******		   	lODASH			   ******/
+  /*
+  Todo: *********		Vue	lODASH			   ********
+  */
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   "استدعاء المكتبة فى Vue": {
@@ -571,7 +526,9 @@
   },
   /////////////////////////////////////////////
   /////////////////////////////////////////////
-  /***********		   	PLUGIN			   **********/
+  /*
+  Todo: *********		 Vue PLUGIN			   ********
+  */
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   "اضافة السوايت الايرت": {
@@ -592,84 +549,11 @@
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
-  //////////////////////// Npm //////////////////////////
-  ///////////////////////////////////////////////////////
-  /********                  Npm                ********/
-  "npm help": {
-    "prefix": "npm help",
-    "body": [
-      "/**",
-      " * ",
-      " * ? Npm",
-      " * npm install",
-      " * npm uninstall --save PackageName",
-      " * npm run serve",
-      " * npm run build",
-      " *",
-      " * ",
-      " * ? Webpack",
-      " * npm run build",
-      " *",
-      " * ",
-      " * ? Error",
-      " * npm run lint -- --fix",
-      " *",
-      " * ",
-      " * ? Node",
-      " * node -v",
-      " *",
-      " * ",
-      " * ? Vue",
-      " * npm install -g @vue/cli",
-      " *",
-      " * ",
-      " * ? Firebase",
-      " * firebase --version",
-      " * firebase -V",
-      " * firebase help",
-      " * firebase [command] --help",
-      " * npm install firebase",
-      " * npm install -g firebase-tools",
-      " * firebase login",
-      " * firebase logout",
-      " * firebase init",
-      " * firebase serve",
-      " * firebase serve --only functions, hosting",
-      " * firebase deploy",
-      " * firebase deploy --only hosting",
-      " * firebase deploy --only functions",
-      " * firebase deploy --only functions:functionName",
-      " * firebase deploy --only functions:function1, function2",
-      " * firebase deploy --only storage",
-      " * firebase deploy --only hosting,functions,storage",
-      " * LearnCodingEasy/",
-      " *",
-      " * ? Json Server",
-      " * json-server --watch data/db.json",
-      " * json-server --watch data/EnglishDictionary.json",
-      " * json-server --watch src/Services/EnglishDictionary.json",
-      " *",
-      " * ? Cache",
-      " * npm cache clean --force",
-      " *",
-      " */"
-    ],
-    "description": "npm help"
-  },
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////////////////////////////////////////
-  ///////////////////// Javascript //////////////////////
-  /******                 Javascript            ********/
+  /*
+  Todo: ***************************************
+  Todo: ******		   	Javascript			   ******
+  Todo: ***************************************
+  */
   ///////////////////////////////////////////////////////
   /* 
   Todo *********** Start Empty File Javascript *********** 
@@ -890,7 +774,7 @@
     "description": "Javascript Comment Output"
   },
   /*
-  Todo **********		   	PLUGIN			   *********
+  Todo **********		 Javascript  	PLUGIN			   *********
   */
   "plugin create Photo With Javascript": {
     "prefix": "js plugin create Photo",
@@ -918,6 +802,66 @@
     ],
     "description": "plugin create Photo With Javascript"
   },
+  /*
+  Todo **********		 Javascript  	Select			   *********
+  */
+  "js select element": {
+    "prefix": "js select element",
+    "body": [
+      "${1|______________________________________________________________________,اختيار العنصر من خلال الايدي,Find Element By ID,Get,document.getElementById('ElementIdName');,___________________________________,Set,document.getElementById('ElementIdName').innerHTML = 'New Inner Html';,______________________________________________________________________,اختيار جميع العناصر من خلال التاج ( نوع العنصر ),بيراجع ابجاكت و علشان تغير عنصر بتختارو عن طريق رقمو فى الصفحة,Find Element By Tag Name,Get All Elements,document.getElementsByTagName('div');,Get Single Element,document.getElementsByTagName('div')[0];,___________________________________,Set All Elements,// Set All Elements\nfor (let i = 0; i < ElementTagName.length; i++) {// Print All Elements\nconsole.log('Print All Elements '\\, ElementTagName[i]);\nElementTagName[i].style.cssText = 'border: 2px solid #333; color: red';\nElementTagName[i].onclick = function () {// Print The Element When Click To It\nconsole.log('This: '\\, this);\n// Get Property Css Of This Element\nconsole.log(this.style.cssText);\n// Get All Classes Of This Element\nconsole.log(this.classList.value);\n// If This Element Have Class Name Do SomeThing\nif (this.classList.value === 'ElementIdName') {\nthis.style.cssText = 'background: #333';\nconsole.log('Yes');\n} else {\nconsole.log('No');\n}\n};\n},___________________________________,Set Single Element,// Set Single Element\nElementTagName[0].innerHTML = 'New Inner Html';,______________________________________________________________________,Select Element By Class Name,اختيار جميع العناصر من خلال الكلاس,بيراجع ابجاكت و علشان تغير عنصر بتختارو عن طريق رقمو فى الصفحة,Get All Elements,document.getElementsByClassName('ElementClassName');,___________________________________,Get Single Element,document.getElementsByClassName('ElementClassName')[0];,___________________________________,Set All Elements,// Set All Elements\nfor (let i = 0; i < ElementsByClassName.length; i++) {\n// Print All Elements\nconsole.log(ElementsByClassName[i]);\nElementsByClassName[i].style.cssText = 'border: 2px solid #333; color: red';\nElementsByClassName[i].onclick = function () {\n// Print The Element When Click To It\nconsole.log('This: '\\, this);\n// Get Property Css Of This Element\nconsole.log(this.style.cssText);\n// Get All Classes Of This Element\nconsole.log(this.classList.value);\n// If This Element Have Class Name Do SomeThing\nif (this.classList.value === 'ElementIdName') {\nthis.style.cssText = 'background: #333';\nconsole.log('Yes');\n} else {\nconsole.log('No');\n}\n};\n},___________________________________,Set Single Element,document.getElementsByClassName('ElementClassName')[0].innerHTML = 'New Inner Html';,______________________________________________________________________,Find Element By CSS Selectors,اختيار العنصر من خلال الكويري سلكت,الكويري سلكت بيراجع ابجاكت,Get Single Element,document.querySelector(`.ElementClassName`);,document.querySelector(`#ElementIdName`);,document.querySelector(`div[data-name]`);,document.querySelector(`div[data-name='dataName']`);,document.querySelector(`div[data-name*='dataName']`);,___________________________________,Set Single Element,document.querySelector(`.ElementClassName`).innerHTML = `Now Inner Html``;,___________________________________,Input,document.querySelector(`[name='inputName']`);,______________________________________________________________________,Find Element By CSS Selectors,Select Element By Query Selector ALL, اختيار جميع العناصر من خلال الكويري سلكت اول,بيراجع ابجاكت و علشان تغير عنصر بتختارو عن طريق رقمو فى الصفحة,Get All Elements,document.querySelectorAll(`section`);,document.querySelectorAll(`section[id]`);,document.querySelectorAll(`.ElementClassName`);,document.querySelectorAll(`#ElementIdName`);,document.querySelectorAll(`div[data-name]`);,document.querySelectorAll(`[data-name]`);,document.querySelectorAll(`div[data-name]`);,document.querySelectorAll(`div[data-name='dataName']`);,document.querySelectorAll(`div[data-name*='dataName']`);,___________________________________,Get Single Element,document.querySelectorAll(`section`)[0];,document.querySelectorAll(`section[id]`)[0];,document.querySelectorAll(`.ElementClassName`)[0];,document.querySelectorAll(`#ElementIdName`)[0];,document.querySelectorAll(`div[data-name]`)[0];,document.querySelectorAll(`[data-name]`)[0];,document.querySelectorAll(`div[data-name]`)[0];,document.querySelectorAll(`div[data-name='dataName']`)[0];,document.querySelectorAll(`div[data-name*='dataName']`)[0];,___________________________________,Set All Elements,// Set All Elements\nfor (let ele of ElementQuerySelectorAll) {\n// Print All Elements\nconsole.log(`Ele: `\\, ele);\nele.onclick = function () {\n// Print The Element When Click To It\nconsole.log(`This: `\\,this);\n// Get All Classes Of This Element\nconsole.log(this.classList.value);\n// If This Element Have Class Name Do SomeThing\nif (this.classList.value === `ElementClassName`) {\nthis.style.cssText = `background: #333`;\nconsole.log(`Yes`);\n} else {\nconsole.log(`No`);\n}\n};\n},___________________________________,Set Single Element,document.querySelectorAll(`section`)[0].innerHTML = `Now Inner Html`;,______________________________________________________________________,Find Element By Collection Body,Get Document Body,document.body;,___________________________________,Set Document Body,document.body.innerHTML = `Learn Coding Eay`;,___________________________________,Append Child,اضافة عنصر فى الصفحة يضيف اخر حاجة فى الصفحة,let z = document.createElement(`p`);\nz.innerHTML = `Learn Coding Easy`;\ndocument.body.appendChild(z);,___________________________________,بتجيب جميع العناصر اللى فى الصفحة و وتخزينها جوة العنصر المختار بالاستيل الخاص بيهم,let ElementIdName = document.getElementById(`ElementIdName`);\nElementIdName.innerHTML = document.body.innerHTML;,___________________________________,بيراجع العناصر اللى فى الصفحة كا تاج زاى اللى مكتوب فى ملفات Html,let ElementIdName = document.getElementById(`ElementIdName`);\nElementIdName.innerText = document.body.innerHTML;,___________________________________,بيراجع محتوى التاسك اللى فى الصفحة,let ElementIdName = document.getElementById(`ElementIdName`);\nElementIdName.innerText = document.body.innerText;,___________________________________,طريقة البحث على كلمة او نص فى محتوى النصوص اللى فى الصفحة و مراعاه انو الحروف حساسة,if (document.body.textContent.indexOf(`Word`) > -1) {\nconsole.log(`I Fined This Word`);\n} else {\nconsole.log(`I Don't Fined This Word`);\n},______________________________________________________________________,Find Element By Collection Title,Get Document Title,document.title;,___________________________________,Set Document Title,لو عاوز عنصر محتوى التاسكات اللى جواه يساوى اسم الصفحة,ElementName.innerHTML = document.title;,___________________________________,لو عاوز اسم الصفحة يساوى محتوى عنصر,document.title = ElementName.innerHTML;,______________________________________________________________________,Find Element By Collection Forms,Get All Forms,document.forms;,___________________________________,Get Single Forms,document.forms[0];,document.forms[0].nameValue;,document.forms[0].nameValue.value;,___________________________________,Sel All Forms,// Sel All Forms\nfor (let ele of AllForms) {\n// Print All Elements\nconsole.log(`Ele: `\\, ele);\nele.onclick = function () {\n// Print The Element When Click To It\nconsole.log(`This: `\\,this);\n// Get All Classes Of This Element\nconsole.log(this.classList.value);\n// If This Element Have Class Name Do SomeThing\nif (this.classList.value === `ElementClassName`) {\nthis.style.cssText = `background: #333`;\nconsole.log(`Yes`);\n} else {\nconsole.log(`No`);\n}\n};\n},___________________________________,Sel Single Forms,AllForms[0].nameValue.value = `New Value`;,______________________________________________________________________,Find Element By Collection Head,اضافة عنصر فى الصفحة يضيف اخر حاجة فى الصفحة,let z = document.createElement(`link`);\nz.setAttribute('href'\\, `https://www.google.com/`);\ndocument.head.appendChild(z);,______________________________________________________________________,Find Element By Collection Links,Get All Links,document.links;,Get Single Link,document.links[0];,______________________________________________________________________,Find Element By Collection Images,Get All Images,document.images;,___________________________________,Get Single Image,document.images[0];,___________________________________,طباعة جميع الصور الموجودة فى الصفحة,for (let i = 0; i < document.images.length; i++) {\nlet source = document.images[i].src;\ndocument.write(`${source} <br>`);\n}|}"
+    ],
+    "description": "js select element"
+  },
+  /*
+  Todo **********		 Javascript  	Attribute	   *********
+  */
+  "js Attribute element": {
+    "prefix": "js attribute element",
+    "body": [
+      "${1|______________________________________________________________________,Get Attribute,Direct Method طريقة مباشرة,selectElement.className;,Indirect Method طريقة غير مباشرة,selectElement.getAttribute(`class`);,Get All The Attribute In The Element احصل على كل صفات في العنصر,selectElement.attributes;,______________________________________________________________________,Set Attribute,Direct Method طريقة مباشرة,selectElement.className = `ClassName`;,Indirect Method طريقة غير مباشرة,selectElement.setAttribute(`AttributeName`\\, `value`);,let attr = document.createAttribute(`data-custom`);\nattr.value = `Test`;\nselectElement.setAttributeNode(attr);,let att = document.createAttribute(`data-custom`);\natt.value = `YourValue`;\nselectElement.setAttributeNode(att);,______________________________________________________________________,Remove Attribute,selectElement.removeAttribute(`class`);,______________________________________________________________________,Check Element Has Attribute  التحقق هل العنصر له صفات,if (selectElement.hasAttribute(`id`)) {\n  console.log(`Yes`);\n} else {\n console.log(`No`);\n},// Check Element Has Attribute And Returns Boolean Data,if (selectElement.hasAttributes()) {\n  console.log(`Yes`);\n} else {\n console.log(`No`);\n}|}"
+    ],
+    "description": "js Attribute element"
+  },
+  /*
+  Todo ******		 Javascript  	Create Elements	   *******
+  */
+  "DOM [Create Elements]": {
+    "prefix": "js create element",
+    "body": [
+      "${1|______________________________________________________________________,Create Element,let myElement = document.createElement(`div`);\n// Append Element To Body\ndocument.body.appendChild(myElement);,______________________________________________________________________,Create Attribute,let myAttr = document.createAttribute(`data-custom`);\nmyAttr.value = `YourValue`;\nselectElement.setAttributeNode(myAttr);,______________________________________________________________________,Create TextNode,let myText = document.createTextNode(`Your Text`);\n// Append Text To Element\nmyElement.appendChild(myText);,______________________________________________________________________,Create Comment,let myComment = document.createComment(`This Is Div`);\n// Append Comment To Element\nmyElement.appendChild(myComment);|}"
+    ],
+    "description": "DOM [Create Elements]"
+  },
+  /*
+  Todo ******		 Javascript  	Create Elements	   *******
+  */
+  "DOM [Deal With Childrens]": {
+    "prefix": "js childrens",
+    "body": [
+      "${1|______________________________________________________________________,children,Get All Children,document.querySelector(`div`).children;,___________________________________,Get SingleChildren,document.querySelector(`div`).children[0];,___________________________________,1 - بيعد عدد الابناء اللى فى العنصر اللى نوعها عنصر,document.querySelector(`div`).children.length;,___________________________________,2 - علشان توصل للعنصر فى الابناء تكتاب رقمو فى الاندكس,document.querySelector(`div`).children[0];,___________________________________,3 - تقدار تجيب الكلاسات اللى فى العنصر و بيراجع كا استرانج className,document.querySelector(`div`).children[0].classList,document.querySelector(`div`).children[0].classList.value;,___________________________________,4 - تقدار تضيف الكلاسات الموجودة فى العنصر دة على عنصر تني,selectElement += document.querySelector(`div`).children[0].classList.value;,______________________________________________________________________,childNodes,Get All Element,بيراجع جميع الابناء اللى فى العنصر حت المسافات و كمانت و التاسكات و بيعدهم,بيراجع بيانات object,علشان توصل للعنصر فى الابناء تكتاب رقمو فى الاندكس,document.querySelector(`div`).childNodes;,document.querySelector(`div`).childNodes[0];,______________________________________________________________________,firstChild,بيراجع اول ابن فى العنصر حت لو كان مسافة و كمانت و تكاست او عنصر,document.querySelector(`div`).firstChild;,______________________________________________________________________,firstChild,بيراجع اخر ابن فى العنصر حت لو كان مسافة و كمانت و تكاست او عنصر,document.querySelector(`div`).lastChild;,______________________________________________________________________,firstElementChild,بيجيب اول عنصر,document.querySelector(`div`).firstElementChild;,______________________________________________________________________,lastElementChild,بيجيب اخر عنصر,document.querySelector(`div`).lastElementChild;,______________________________________________________________________,childElementCount,بيعد الابناء فقط بمعنى العناصر بس ,من غير التاسكات او كمانت او المسافات الفارغة اللى فى الاب,بيراجع بيانات ارقام,document.querySelector(`div`).childElementCount;,document.querySelector(`div`).children.length;|}"
+    ],
+    "description": "DOM [Deal With Childrens]"
+  },
+  /*
+  Todo *********		 Javascript   [Events]   **********
+  */
+  "DOM [Events]": {
+    "prefix": "js event",
+    "body": [
+      "${1|______________________________________________________________________,// Element 👉️ onclick ondblclick oncontextmenu onmouseenter,// Element 👉️ onmouseover onmouseleave onmouseout,___________________________________,Click,selectElement.onclick = function () {console.log(`Clicked`);};,___________________________________,Dbl Click,selectElement.ondblclick = function () {console.log(`dbl click`);};,___________________________________,context menu,selectElement.oncontextmenu = function () {console.log(`context menu`);};,___________________________________,Mouse Enter,selectElement.onmouseenter = function () {console.log(`Mouse Enter`);};,___________________________________,Mouse Over,selectElement.onmouseover = function () {console.log(`Mouse Over`);};,___________________________________,Mouse Leave,selectElement.onmouseleave = function () {console.log(`Mouse Leave`);};,___________________________________,Mouse Out,selectElement.onmouseout = function () {console.log(`Mouse Out`);};,______________________________________________________________________,Input,// input 👉️ onfocus onblur onkeyup onkeypress onkeydown onsubmit,___________________________________,Input Focus,selectInput.onfocus = function () {console.log(`Input Focus`);};,___________________________________,Input Blur,selectInput.onblur = function () {console.log(`Input Blur`);};,___________________________________,Input Key Up,selectInput.onkeyup = function () {console.log(`Input Key Up`);};,___________________________________,Input Key Press,selectInput.onkeypress = function () {console.log(`Input Key Press`);};,___________________________________,Input Key Down,selectInput.onkeydown = function () {console.log(`Input Key Down`);};,___________________________________,Form Submit,selectInput.onsubmit = function () {console.log(`Form Submit`);};,______________________________________________________________________,Select,// Select 👉️ onchange,selectSelect.onchange = function () {console.log(selectSelect.value);};,______________________________________________________________________,Prevent Default,// Prevent Default 👉️ Link Form,selectLink.onclick = function (e) {console.log(`e: `\\, e);e.preventDefault();};,______________________________________________________________________,window,// window 👉️ onload onscroll onresize,___________________________________,On Load,window.onload = function () {console.log(`Window On Load`);};,___________________________________,On Scroll,window.onscroll = function () {console.log(`Window Scroll`);};,___________________________________,Show Button Scroll,// Show Button Scroll Top\nlet btnScrollTop = document.getElementById(`scroll-top`);\nfunction ShowBtnScroll() {\n  if (window.scrollY >= 200) {\n    console.log(`window scrollY 👉️ ${window.scrollY}`);\n    btnScrollTop.classList.add(`show-scroll-top`);\n  } else {\n    btnScrollTop.classList.remove(`show-scroll-top`);\n  }\n}\nwindow.onscroll = ShowBtnScroll;,___________________________________,On Resize,window.onresize = function () {console.log(`Window Resize`);};|}"
+    ],
+    "description": "DOM [Events]"
+  },
+  /*
+  Todo *********		 Javascript   [ Form Validate ]   **********
+  */
+  "DOM [Form Validate ]": {
+    "prefix": "js form validate",
+    "body": [
+      "${1|______________________________________________________________________,// js Form Validate\nlet userInput = document.querySelector(`[name='username']`);\nlet ageInput = document.querySelector(`[name='age']`);\ndocument.forms[0].onsubmit = function (e) {\n  let userValid = false;\n  let ageValid = false;\n  // Condition\n  // Input Is Not Empty\n  // Input Value Length Bigger Than 10 Chars\n  if (userInput.value !== `` && userInput.value.length <= 10) {\n    userValid = true;\n    console.log(`userValid: `\\, userValid);\n  }\n  // Condition\n  //Input Is Not Empty\n  if (ageInput.value !== ``) {\n    ageValid = true;\n    console.log(`ageValid: `\\, ageValid);\n  }\n  if (userValid === false \\|\\| ageValid === false) {\n    e.preventDefault();\n  }\n};,______________________________________________________________________|}"
+    ],
+    "description": "DOM [Form Validate ]"
+  },
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -930,10 +874,12 @@
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
-  ///////////////////// Github //////////////////////
   ///////////////////////////////////////////////////////
-  /* 
-  Todo ****************** Github ****************** 
+
+  /*
+  Todo: ***********************************
+  Todo: ******		   	Github			   ******
+  Todo: ***********************************
   */
 
   "git help": {
@@ -1488,10 +1434,13 @@
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
+
   /*
-  Todo: 
-  ********************* Gulp *********************
+  Todo: *********************************
+  Todo: ******		   	Gulp			   ******
+  Todo: *********************************
   */
+
   "Gulp Help": {
     "prefix": "gulp help",
     "body": [
@@ -1730,6 +1679,15 @@
       " * webp استخدام",
       " * => .pipe(webp())",
       " * ",
+      " * Number-15",
+      " * ? Json Server",
+      " * Json Server اضافة لعمال ملاف جسان كا دات بيس",
+      " * Link: (https://www.npmjs.com/package/gulp-json-server)",
+      " * Json Server تنزيل الاضافة",
+      " * => npm install -g json-server",
+      " * => npm i gulp-json-server",
+      " * Json Server استخدام",
+      " * json-server --watch db.json",
       " *",
       " *",
       " * Done: Input And Output",
@@ -2105,6 +2063,16 @@
       "  );",
       "});",
       "",
+      "// ===== Task Json Server =====",
+      "gulp.task(\"jsonServer\", function () {",
+      "  return gulp",
+      "    .src(\"project/data/*.json\")",
+      "    .pipe(gulp.dest(\"dist/data\"))",
+      "    .pipe(livereload())",
+      "    .pipe(notify(\"Task Json Server Is Done\"));",
+      "});",
+      "",
+      "",
       "// ===== Task Libs Js =====",
       "gulp.task(\"libs-js\", function () {",
       "  return gulp",
@@ -2169,6 +2137,8 @@
       "  gulp.watch(\"project/js/**/*.js\", gulp.series(\"js\"));",
       "  // gulp.watch(\"project/ts/**\\/*.ts\", gulp.series(\"ts\"));",
       "  gulp.watch(\"project/libs-js/**/*\", gulp.series(\"libs-js\"));",
+      "  // = Json Server",
+      "  gulp.watch(\"project/data/**/*\", gulp.series(\"jsonServer\"));",
       "  // = Images",
       "  gulp.watch(\"project/images/**/*\", gulp.series(\"compressImages\"));",
       "  // = Zip",
@@ -2189,12 +2159,26 @@
     "prefix": "gulp install",
     "body": [
       "/* ",
-      "npm i gulp-pug vinyl-ftp gulp-babel",
-      "npm i --save-dev gulp ",
+      "npm init",
+      "npm i gulp -g",
+      "npm i --save-dev gulp",
+      "npm install --save-dev gulp-concat",
+      "npm install --save-dev gulp-autoprefixer",
       "npm install sass gulp-sass --save-dev",
+      "npm i gulp-pug",
       "npm i static-server -save",
+      "npm install --save-dev gulp-livereload",
+      "npm i gulp-sourcemaps --save-dev",
+      "npm install --save-dev gulp-uglify",
       "npm i gulp-notify --save-dev",
-      "npm install --save-dev gulp-zip gulp-babel @babel/core @babel/preset-env gulp-webp gulp-autoprefixer gulp-livereload gulp-uglify",
+      "npm i gulp-babel",
+      "npm install --save-dev gulp-babel @babel/core @babel/preset-env",
+      "npm install --save-dev gulp-zip",
+      "npm i vinyl-ftp ",
+      "npm install --save-dev gulp-webp",
+      "npm install -g json-server",
+      "npm i gulp-json-server",
+      "npm install gulp-typescript",
       "*/"
     ],
     "description": "gulp install"
@@ -2211,9 +2195,105 @@
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
-  ///////////////////// Comment //////////////////////
   ///////////////////////////////////////////////////////
+  /*
+  Todo: *******************************
+  Todo: ******		   	Npm			   ******
+  Todo: *******************************
+  */
+  "npm help": {
+    "prefix": "npm help",
+    "body": [
+      "/**",
+      " * ",
+      " * ? Npm",
+      " * npm install",
+      " * npm uninstall --save PackageName",
+      " * npm run serve",
+      " * npm run build",
+      " *",
+      " * ",
+      " * ? Webpack",
+      " * npm run build",
+      " *",
+      " * ",
+      " * ? Error",
+      " * npm run lint -- --fix",
+      " *",
+      " * ",
+      " * ? Node",
+      " * node -v",
+      " *",
+      " * ",
+      " * ? Vue",
+      " * npm install -g @vue/cli",
+      " *",
+      " * ",
+      " * ? Firebase",
+      " * firebase --version",
+      " * firebase -V",
+      " * firebase help",
+      " * firebase [command] --help",
+      " * npm install firebase",
+      " * npm install -g firebase-tools",
+      " * firebase login",
+      " * firebase logout",
+      " * firebase init",
+      " * firebase serve",
+      " * firebase serve --only functions, hosting",
+      " * firebase deploy",
+      " * firebase deploy --only hosting",
+      " * firebase deploy --only functions",
+      " * firebase deploy --only functions:functionName",
+      " * firebase deploy --only functions:function1, function2",
+      " * firebase deploy --only storage",
+      " * firebase deploy --only hosting,functions,storage",
+      " * LearnCodingEasy/",
+      " *",
+      " * ? Json Server",
+      " * npm install -g json-server",
+      " * json-server --watch db.json",
+      " * json-server --watch data/db.json",
+      " * json-server --watch data/EnglishDictionary.json",
+      " * json-server --watch src/Services/EnglishDictionary.json",
+      " *",
+      " * ? Cache",
+      " * npm cache clean --force",
+      " *",
+      " */"
+    ],
+    "description": "npm help"
+  },
 
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  /*
+  Todo: *********************************
+  Todo: ******		   	GLobal			   ****
+  Todo: *********************************
+  */
+  /*
+  Todo **********		 Emoji	   *********
+  */
+  "GLobal Emoji": {
+    "prefix": "emoji",
+    "body": ["${1|👉️|}"],
+    "description": "GLobal Emoji"
+  },
+  /*
+  Todo **********		 Comment	   *********
+  */
   "js comment": {
     "prefix": "comment",
     "body": [
