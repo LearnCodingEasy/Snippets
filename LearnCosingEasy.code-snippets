@@ -1186,10 +1186,10 @@
     "description": "Filter Mix it Up "
   },
   /* 
-  Todo *********** Owl *********** 
+  Todo *********** Owl Slider *********** 
   */
   "Build Plugin Owl ": {
-    "prefix": "pug plugin owl",
+    "prefix": "pug plugin owl basic",
     "body": [
       "// Owl",
       "// Website = https://owlcarousel2.github.io/OwlCarousel2/",
@@ -1212,6 +1212,85 @@
       "    div(class=\"item\") one"
     ],
     "description": "Build Plugin Owl "
+  },
+  "Build owl slider": {
+    "prefix": "pug owl slider box 1",
+    "body": [
+      "// Owl",
+      "// Website = https://owlcarousel2.github.io/OwlCarousel2/",
+      "// Owl Include File Css",
+      "// link(rel=\"stylesheet\" href=\"css/libs/owl/owl.theme.default.min.css\")",
+      "// link(rel=\"stylesheet\" href=\"css/libs/owl/owl.carousel.min.css\")",
+      "// Owl Include File Javascript",
+      "// script(src='js/libs/owl/owl.carousel.min.js') ",
+      "div(class=\"owl-wrapper\")",
+      "  div(class=\"owl-carousel owl-theme\" id=\"owl-carousel\")",
+      "    // Single Item",
+      "    div(class=\"item\") ",
+      "      div(class=\"inner\") ",
+      "        div(class=\"icon\")",
+      "          div(class=\"icon-quote\")",
+      "            i(class=\"fas fa-quote-left\")",
+      "          div(class=\"icon-start\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"far fa-star\")",
+      "            i(class=\"far fa-star\")",
+      "        div(class=\"text\")",
+      "          div(class=\"description\")",
+      "            p(class=\"lead\") Interesting design and concept, beautiful presentation and functional features are what make this theme worth your time, money and effort.",
+      "          div(class=\"author-name\")",
+      "            h5 Rajor Fatia",
+      "        div(class=\"image\")",
+      "          div(class=\"author-image\")",
+      "            img(src=\"https://wp1.yogsthemes.com/demo/manzil/wp-content/uploads/2020/07/author-2.jpg\" alt=\"\")",
+      "",
+      "    // Single Item",
+      "    div(class=\"item\") ",
+      "      div(class=\"inner\") ",
+      "        div(class=\"icon\")",
+      "          div(class=\"icon-quote\")",
+      "            i(class=\"fas fa-quote-left\")",
+      "          div(class=\"icon-start\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"far fa-star\")",
+      "            i(class=\"far fa-star\")",
+      "            i(class=\"far fa-star\")",
+      "        div(class=\"text\")",
+      "          div(class=\"description\")",
+      "            p(class=\"lead\") Don’t buy this theme, you won’t be able to resist its charm. Right, like you’re charmed. A theme that is truly multipurpose and flexible.",
+      "          div(class=\"author-name\")",
+      "            h5 Smith Makan",
+      "        div(class=\"image\")",
+      "          div(class=\"author-image\")",
+      "            img(src=\"https://wp1.yogsthemes.com/demo/manzil/wp-content/uploads/2020/07/author-3.jpg\" alt=\"\")",
+      "",
+      "    // Single Item",
+      "    div(class=\"item\") ",
+      "      div(class=\"inner\")",
+      "        div(class=\"icon\")",
+      "          div(class=\"icon-quote\")",
+      "            i(class=\"fas fa-quote-left\")",
+      "          div(class=\"icon-start\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"fas fa-star\")",
+      "            i(class=\"fas fa-star\")",
+      "        div(class=\"text\")",
+      "          div(class=\"description\")",
+      "            p(class=\"lead\") “Makin their way the only way they know how that’s just a little bit more than the law will allow these happy days are you. leads a rag tag fugitive fleet on a lonely”",
+      "          div(class=\"author-name\")",
+      "            h5 Malika Morla",
+      "        div(class=\"image\")",
+      "          div(class=\"author-image\")",
+      "            img(src=\"https://wp1.yogsthemes.com/demo/manzil/wp-content/uploads/2020/07/author-1.jpg\" alt=\"\")",
+      "",
+      ""
+    ],
+    "description": "Build owl slider"
   },
   /* 
   Todo *********** Magnific *********** 
@@ -1252,6 +1331,7 @@
     ],
     "description": "Plugin magnific Group"
   },
+
   /* 
   Todo *********** Fontawesome *********** 
   */
@@ -1884,6 +1964,7 @@
   /*
   Todo: **********		 plugin	Style		   *********
   */
+
   /*
   Todo: **********		Nivo	Slider		   *********
   */
@@ -2800,6 +2881,56 @@
       ""
     ],
     "description": "Css 2 اسلايدار التنصيقات الخاصة بى لغة ال"
+  },
+  "count to": {
+    "prefix": "js plugin count to",
+    "body": [
+      "/*",
+      "=====================================================",
+      "Todo ======= Count To Number ========================",
+      "=====================================================",
+      "*/",
+      "$(\".timer\").countTo();"
+    ],
+    "description": "count to"
+  },
+  "Count To": {
+    "prefix": "js plugin count to 1",
+    "body": [
+      "/*",
+      "=====================================================",
+      "Todo ======= Count To Number ========================",
+      "=====================================================",
+      "*/",
+      "$('.timer').countTo({from: 0, to: 500});"
+    ],
+    "description": "Count To"
+  },
+  "Count To Wiyh Options": {
+    "prefix": "js plugin count to 2",
+    "body": [
+      "/*",
+      "=====================================================",
+      "Todo ======= Count To Number ========================",
+      "=====================================================",
+      "*/",
+      "$(\".timer\").countTo({",
+      "  from: 50,",
+      "  to: 2500,",
+      "  speed: 1000,",
+      "  refreshInterval: 50,",
+      "  formatter: function (value, options) {",
+      "    return value.toFixed(options.decimals);",
+      "  },",
+      "  onUpdate: function (value) {",
+      "    console.debug(this);",
+      "  },",
+      "  onComplete: function (value) {",
+      "    console.debug(this);",
+      "  },",
+      "});"
+    ],
+    "description": "Count To Wiyh Options"
   },
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -3843,6 +3974,215 @@
     ],
     "description": "Scss 2 اسلايدار التنصيقات الخاصة بى لغة ال"
   },
+  /*
+  Todo: **********		Owl	Slider		   *********
+  */
+  "owl basic": {
+    "prefix": "scss owl basic",
+    "body": [
+      ".owl-wrapper {",
+      "  position: relative;",
+      "  width: 100%;",
+      "  .owl-carousel {",
+      "    &.owl-theme {",
+      "      .owl-stage-outer {",
+      "        .owl-stage {",
+      "          .owl-item {",
+      "          //  Element Hide",
+      "            &.cloned {",
+      "            }",
+      "            // Element Show",
+      "            &.active{}",
+      "          }",
+      "        }",
+      "      }",
+      "      // Nav",
+      "      .owl-nav{",
+      "        .owl-prev{}",
+      "        .owl-next{}",
+      "      }",
+      "      // Dots",
+      "      .owl-dots{}",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "description": "owl basic"
+  },
+  "owl slider": {
+    "prefix": "scss plugin owl slider",
+    "body": [
+      ".owl-wrapper {",
+      "  position: relative;",
+      "  padding: 3rem 0;",
+      "  .owl-carousel {",
+      "    &.owl-theme {",
+      "      // Inner",
+      "      .owl-stage-outer {",
+      "        padding: 1rem 0 3rem 0;",
+      "        .owl-stage {",
+      "          // All Items",
+      "          .owl-item {",
+      "            // Element Hide",
+      "            &.cloned {",
+      "            }",
+      "            // Element Show",
+      "            &.active {",
+      "              .item {",
+      "                background-image: linear-gradient(",
+      "                  to bottom,",
+      "                  #1b1a1a 0%,",
+      "                  #222 100%",
+      "                );",
+      "                // height: 400px;",
+      "                margin-bottom: 40px;",
+      "                .inner {",
+      "                  // height: 500px;",
+      "                  display: flex;",
+      "                  justify-content: space-between;",
+      "                  align-items: center;",
+      "                  flex-direction: column;",
+      "                  // padding: 5rem 1rem 1rem 1rem;",
+      "                  padding: 2rem 1rem;",
+      "                  // border: 3px solid var(--color-first);",
+      "                  border-radius: 20px;",
+      "                  // overflow: hidden;",
+      "                  // height: 100%;",
+      "                  border: 3px solid var(--color-first);",
+      "                  .icon {",
+      "                    display: flex;",
+      "                    flex-direction: column;",
+      "                    justify-content: space-between;",
+      "                    align-items: center;",
+      "                    // height: 100px;",
+      "                    .icon-quote {",
+      "                      padding-bottom: 2rem;",
+      "                      i {",
+      "                        color: var(--color-fourth-icon);",
+      "                        font-size: var(--font-size-h1);",
+      "                      }",
+      "                    }",
+      "                    .icon-start {",
+      "                      padding-bottom: 2rem;",
+      "                      i {",
+      "                        color: var(--color-first-icon);",
+      "                      }",
+      "                    }",
+      "                  }",
+      "                  .text {",
+      "                    text-align: center;",
+      "                    padding-bottom: 2rem;",
+      "                    .description {",
+      "                      padding-bottom: 2rem;",
+      "                      color: var(--color-second-title);",
+      "                      p {",
+      "                        font-size: var(--font-size-h3);",
+      "                      }",
+      "                    }",
+      "                    .author-name {",
+      "                      padding-bottom: 1rem;",
+      "                      color: var(--color-first);",
+      "                    }",
+      "                  }",
+      "                  .image {",
+      "                    position: absolute;",
+      "                    // display: block;",
+      "                    bottom: -10px;",
+      "                    .author-image {",
+      "                      border: 5px solid var(--color-first);",
+      "                      border-radius: 50%;",
+      "                      // overflow: hidden;",
+      "                      // position: absolute;",
+      "                      bottom: 0px;",
+      "                      // bottom: -50px;",
+      "                      z-index: 100;",
+      "                      display: block;",
+      "                      // margin-bottom: -100px;",
+      "                      img {",
+      "                        border-radius: 50%;",
+      "                      }",
+      "                    }",
+      "                  }",
+      "                }",
+      "              }",
+      "            }",
+      "          }",
+      "        }",
+      "      }",
+      "      // Arrow",
+      "      .owl-nav {",
+      "        position: absolute;",
+      "        top: -100px;",
+      "        right: 10px;",
+      "        width: 150px;",
+      "        border: 2px solid rgba(5, 5, 5, 0.021);",
+      "        display: flex;",
+      "        justify-content: space-around;",
+      "        align-items: center;",
+      "        .owl-prev,",
+      "        .owl-next {",
+      "          color: var(--color-first-icon);",
+      "          display: block;",
+      "          position: relative;",
+      "          border: 2px solid var(--color-second-border);",
+      "          width: 100%;",
+      "          transition: all var(--ele-transition-normal) ease;",
+      "          span {",
+      "            font-size: 40px;",
+      "          }",
+      "          &:hover {",
+      "            background-color: var(--color-first-icon);",
+      "            color: var(--color-second-icon);",
+      "            border-radius: 50%;",
+      "          }",
+      "        }",
+      "        .owl-next {",
+      "        }",
+      "        .owl-prev {",
+      "        }",
+      "        &.disabled {",
+      "          // display: block !important;",
+      "        }",
+      "      }",
+      "      // Dots",
+      "      .owl-dots {",
+      "        &.disabled {",
+      "          // display: block !important;",
+      "        }",
+      "      }",
+      "    }",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "owl slider"
+  },
+  /*
+  Todo: **********		Animation		   *********
+  */
+  "animation background 1": {
+    "prefix": "scss animation background",
+    "body": [
+      ".ele{",
+      "  animation-name: background-change;",
+      "  animation-duration: 5s;",
+      "  animation-iteration-count: infinite;",
+      "  animation-delay: 0s;",
+      "  animation-timing-function: ease-in-out;",
+      "  animation-direction: alternate;",
+      "}",
+      "@keyframes background-change {",
+      "  0% {",
+      "    background-image: url(https://wp1.yogsthemes.com/demo/manzil/wp-content/uploads/2020/07/pattern-2.png);",
+      "  }",
+      "",
+      "  to {",
+      "    background-image: url(https://wp1.yogsthemes.com/demo/manzil/wp-content/uploads/2020/07/3.jpg);",
+      "  }",
+      "}"
+    ],
+    "description": "animation background 1"
+  },
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -4458,7 +4798,7 @@
   "js Attribute element": {
     "prefix": "js attribute element",
     "body": [
-      "${1|______________________________________________________________________,Get Attribute 👉,Direct Method طريقة مباشرة,selectElement.className;,Indirect Method طريقة غير مباشرة,selectElement.getAttribute(`class`);,Get All The Attribute In The Element احصل على كل صفات في العنصر,selectElement.attributes;,______________________________________________________________________,Set Attribute 👉,Direct Method طريقة مباشرة,selectElement.className = `ClassName`;,Indirect Method طريقة غير مباشرة,selectElement.setAttribute(`AttributeName`\\, `value`);,let attr = document.createAttribute(`data-custom`);\nattr.value = `Test`;\nselectElement.setAttributeNode(attr);,let att = document.createAttribute(`data-custom`);\natt.value = `YourValue`;\nselectElement.setAttributeNode(att);,______________________________________________________________________,Remove Attribute 👉,selectElement.removeAttribute(`class`);,______________________________________________________________________,Check Element Has Attribute 👉  التحقق هل العنصر له صفات,if (selectElement.hasAttribute(`id`)) {\n  console.log(`Yes`);\n} else {\n console.log(`No`);\n},// Check Element Has Attribute And Returns Boolean Data,if (selectElement.hasAttributes()) {\n  console.log(`Yes`);\n} else {\n console.log(`No`);\n},______________________________________________________________________, 👉 طريقة جالب قامة الكلاسات الموجودة فى العنصر,|}"
+      "${1|______________________________________________________________________,Get Attribute 👉,Direct Method طريقة مباشرة,selectElement.className;,Indirect Method طريقة غير مباشرة,selectElement.getAttribute(`class`);,Get All The Attribute In The Element احصل على كل صفات في العنصر,selectElement.attributes;,______________________________________________________________________,Set Attribute 👉,Direct Method طريقة مباشرة,selectElement.className = `ClassName`;,Indirect Method طريقة غير مباشرة,selectElement.setAttribute(`AttributeName`\\, `value`);,let attr = document.createAttribute(`data-custom`);\nattr.value = `Test`;\nselectElement.setAttributeNode(attr);,let att = document.createAttribute(`data-custom`);\natt.value = `YourValue`;\nselectElement.setAttributeNode(att);,______________________________________________________________________,Remove Attribute 👉,selectElement.removeAttribute(`class`);,______________________________________________________________________,Check Element Has Attribute 👉  التحقق هل العنصر له صفات,if (selectElement.hasAttribute(`id`)) {\n  console.log(`Yes`);\n} else {\n console.log(`No`);\n},// Check Element Has Attribute And Returns Boolean Data,if (selectElement.hasAttributes()) {\n  console.log(`Yes`);\n} else {\n console.log(`No`);\n},______________________________________________________________________, 👉 طريقة جالب قامة الكلاسات الموجودة فى العنصر,a|}"
     ],
     "description": "js Attribute element"
   },
@@ -4478,7 +4818,7 @@
   "DOM [Deal With Childrens]": {
     "prefix": "js childrens",
     "body": [
-      "${1|______________________________________________________________________,children,بيعد عدد الابنا اللى فى العنصر,بيعد الابناء فقط بمعنى العناصر بس ,من غير التكسات او الكمانت او المساحات الفاضية اللى فى الاب,Get All Children,document.querySelector(`div`).children;,___________________________________,Get SingleChildren,document.querySelector(`div`).children[0];,___________________________________,1 - بيعد عدد الابناء اللى فى العنصر اللى نوعها عنصر,document.querySelector(`div`).children.length;,___________________________________,2 - علشان توصل للعنصر فى الابناء تكتاب رقمو فى الاندكس,document.querySelector(`div`).children[0];,___________________________________,3 - تقدار تجيب الكلاسات اللى فى العنصر و بيراجع كا استرانج className,document.querySelector(`div`).children[0].classList,document.querySelector(`div`).children[0].classList.value;,___________________________________,4 - تقدار تضيف الكلاسات الموجودة فى العنصر دة على عنصر تني,selectElement += document.querySelector(`div`).children[0].classList.value;,______________________________________________________________________,childNodes,Get All Element,بيراجع جميع الابناء اللى فى العنصر حت المسافات و كمانت و التاسكات و بيعدهم,بيراجع بيانات object,علشان توصل للعنصر فى الابناء تكتاب رقمو فى الاندكس,document.querySelector(`div`).childNodes;,document.querySelector(`div`).childNodes[0];,______________________________________________________________________,firstChild,بيراجع اول ابن فى العنصر حت لو كان مسافة و كمانت و تكاست او عنصر,document.querySelector(`div`).firstChild;,______________________________________________________________________,lastChild,بيراجع اخر ابن فى العنصر حت لو كان مسافة و كمانت و تكاست او عنصر,document.querySelector(`div`).lastChild;,______________________________________________________________________,firstElementChild,بيجيب اول عنصر,document.querySelector(`div`).firstElementChild;,______________________________________________________________________,lastElementChild,بيجيب اخر عنصر,document.querySelector(`div`).lastElementChild;,______________________________________________________________________,childElementCount,بيعد الابناء فقط بمعنى العناصر بس ,من غير التاسكات او كمانت او المسافات الفارغة اللى فى الاب,بيراجع بيانات ارقام,document.querySelector(`div`).childElementCount;,document.querySelector(`div`).children.length;|}"
+      "${1|______________________________________________________________________,childElementCounts,بيعد عدد الابنا اللى فى العنصر,بيرجع بيانات ارقام,بيعد الابناء فقط بمعنى العناصر بس من غير التكسات او الكمانت او المساحات الفاضية اللى فى الاب,console.log(element.childElementCount);,___________________________________,children,بيعد عدد الابنا اللى فى العنصر,بيعد الابناء فقط بمعنى العناصر بس ,من غير التكسات او الكمانت او المساحات الفاضية اللى فى الاب,Get All Children,document.querySelector(`div`).children;,___________________________________,Get SingleChildren,document.querySelector(`div`).children[0];,___________________________________,1 - بيعد عدد الابناء اللى فى العنصر اللى نوعها عنصر,document.querySelector(`div`).children.length;,___________________________________,2 - علشان توصل للعنصر فى الابناء تكتاب رقمو فى الاندكس,document.querySelector(`div`).children[0];,___________________________________,3 - تقدار تجيب الكلاسات اللى فى العنصر و بيراجع كا استرانج className,document.querySelector(`div`).children[0].classList,document.querySelector(`div`).children[0].classList.value;,___________________________________,4 - تقدار تضيف الكلاسات الموجودة فى العنصر دة على عنصر تني,selectElement += document.querySelector(`div`).children[0].classList.value;,______________________________________________________________________,childNodes,Get All Element,بيراجع جميع الابناء اللى فى العنصر حت المسافات و كمانت و التاسكات و بيعدهم,بيراجع بيانات object,علشان توصل للعنصر فى الابناء تكتاب رقمو فى الاندكس,document.querySelector(`div`).childNodes;,document.querySelector(`div`).childNodes[0];,______________________________________________________________________,firstChild,بيراجع اول ابن فى العنصر حت لو كان مسافة و كمانت و تكاست او عنصر,document.querySelector(`div`).firstChild;,______________________________________________________________________,lastChild,بيراجع اخر ابن فى العنصر حت لو كان مسافة و كمانت و تكاست او عنصر,document.querySelector(`div`).lastChild;,______________________________________________________________________,firstElementChild,بيجيب اول عنصر,document.querySelector(`div`).firstElementChild;,______________________________________________________________________,lastElementChild,بيجيب اخر عنصر,document.querySelector(`div`).lastElementChild;,______________________________________________________________________,childElementCount,بيعد الابناء فقط بمعنى العناصر بس ,من غير التاسكات او كمانت او المسافات الفارغة اللى فى الاب,بيراجع بيانات ارقام,document.querySelector(`div`).childElementCount;,document.querySelector(`div`).children.length;|}"
     ],
     "description": "DOM [Deal With Childrens]"
   },
@@ -4488,13 +4828,50 @@
   "DOM [Events]": {
     "prefix": "js event",
     "body": [
-      "${1|______________________________________________________________________,// Element 👉️ onclick ondblclick oncontextmenu onmouseenter,// Element 👉️ onmouseover onmouseleave onmouseout,___________________________________,Click,selectElement.onclick = function () {console.log(`Clicked`);};,___________________________________,Dbl Click,selectElement.ondblclick = function () {console.log(`dbl click`);};,___________________________________,context menu,selectElement.oncontextmenu = function () {console.log(`context menu`);};,___________________________________,Mouse Enter,selectElement.onmouseenter = function () {console.log(`Mouse Enter`);};,___________________________________,Mouse Over,selectElement.onmouseover = function () {console.log(`Mouse Over`);};,___________________________________,Mouse Leave,selectElement.onmouseleave = function () {console.log(`Mouse Leave`);};,___________________________________,Mouse Out,selectElement.onmouseout = function () {console.log(`Mouse Out`);};,______________________________________________________________________,Input,// input 👉️ onfocus onblur onkeyup onkeypress onkeydown onsubmit,___________________________________,Input Focus,selectInput.onfocus = function () {console.log(`Input Focus`);};,___________________________________,Input Blur,selectInput.onblur = function () {console.log(`Input Blur`);};,___________________________________,Input Key Up,selectInput.onkeyup = function () {console.log(`Input Key Up`);};,___________________________________,Input Key Press,selectInput.onkeypress = function () {console.log(`Input Key Press`);};,___________________________________,Input Key Down,selectInput.onkeydown = function () {console.log(`Input Key Down`);};,___________________________________,Form Submit,selectInput.onsubmit = function () {console.log(`Form Submit`);};,______________________________________________________________________,Select,// Select 👉️ onchange,selectSelect.onchange = function () {console.log(selectSelect.value);};,______________________________________________________________________,Prevent Default,// Prevent Default 👉️ Link Form,selectLink.onclick = function (e) {console.log(`e: `\\, e);e.preventDefault();};,______________________________________________________________________,window,// window 👉️ onload onscroll onresize,___________________________________,On Load,window.onload = function () {console.log(`Window On Load`);};,طريقة عمل فوكاس على حقل ادخال,window.onload = function () {selectSelect.focus();};,___________________________________,On Scroll,window.onscroll = function () {console.log(`Window Scroll`);};,___________________________________,Show Button Scroll,// Show Button Scroll Top\nlet btnScrollTop = document.getElementById(`scroll-top`);\nfunction ShowBtnScroll() {\n  if (window.scrollY >= 200) {\n    console.log(`window scrollY 👉️ ${window.scrollY}`);\n    btnScrollTop.classList.add(`show-scroll-top`);\n  } else {\n    btnScrollTop.classList.remove(`show-scroll-top`);\n  }\n}\nwindow.onscroll = ShowBtnScroll;,___________________________________,On Resize,window.onresize = function () {console.log(`Window Resize`);};|}"
+      "${1|______________________________________________________________________,// Element 👉️ onclick ondblclick oncontextmenu onmouseenter,// Element 👉️ onmouseover onmouseleave onmouseout,___________________________________,Click,selectElement.onclick = function () {console.log(`Clicked`);};,___________________________________,Dbl Click,selectElement.ondblclick = function () {console.log(`dbl click`);};,___________________________________,context menu,selectElement.oncontextmenu = function () {console.log(`context menu`);};,___________________________________,Mouse Enter,selectElement.onmouseenter = function () {console.log(`Mouse Enter`);};,___________________________________,Mouse Over,selectElement.onmouseover = function () {console.log(`Mouse Over`);};,___________________________________,Mouse Leave,selectElement.onmouseleave = function () {console.log(`Mouse Leave`);};,___________________________________,Mouse Out,selectElement.onmouseout = function () {console.log(`Mouse Out`);};,______________________________________________________________________,Input,// input 👉️ onfocus onblur onkeyup onkeypress onkeydown onsubmit,___________________________________,Input Focus,selectInput.onfocus = function () {console.log(`Input Focus`);};,___________________________________,Input Blur,selectInput.onblur = function () {console.log(`Input Blur`);};,___________________________________,Input Key Up,selectInput.onkeyup = function () {console.log(`Input Key Up`);};,___________________________________,Input Key Press,selectInput.onkeypress = function () {console.log(`Input Key Press`);};,___________________________________,Input Key Down,selectInput.onkeydown = function () {console.log(`Input Key Down`);};,___________________________________,Form Submit,selectInput.onsubmit = function () {console.log(`Form Submit`);};,______________________________________________________________________,Select,// Select 👉️ onchange,selectSelect.onchange = function () {console.log(selectSelect.value);};,______________________________________________________________________,Prevent Default,// Prevent Default 👉️ Link Form,selectLink.onclick = function (e) {console.log(`e: `\\, e);e.preventDefault();};,______________________________________________________________________,window,// window 👉️ onload onscroll onresize,___________________________________,On Load,window.onload = function () {console.log(`Window On Load`);};,طريقة عمل فوكاس على حقل ادخال,window.onload = function () {selectSelect.focus();};,الفكرة لو عاوز تخالى الصفحة نفسها هى اللى تدوس على العنصر, من غير تتدخل منك زاى فى حالة انو انت اللى بتدوس على زورار,let element = document.getElementById(`element`);let btn = document.getElementById(`btn`);btn.onclick = function () { `use strict`; element.style.border = `3px solid #3498db`;};window.onload = function () {  setTimeout(() => {    btn.click();  }\\, 10000);};,طريقة تانية تخالى الصفحة تنفز اللستيل من غير ايفانت,window.onload = function () { function setStyle() {   `use strict`;   let element = document.getElementById(`element`);   element.style.border = `3px solid #3498db`; } setTimeout(setStyle\\, 1000);};,___________________________________,On Scroll,window.onscroll = function () {console.log(`Window Scroll`);};,___________________________________,Show Button Scroll,// Show Button Scroll Top\nlet btnScrollTop = document.getElementById(`scroll-top`);\nfunction ShowBtnScroll() {\n  if (window.scrollY >= 200) {\n    console.log(`window scrollY 👉️ ${window.scrollY}`);\n    btnScrollTop.classList.add(`show-scroll-top`);\n  } else {\n    btnScrollTop.classList.remove(`show-scroll-top`);\n  }\n}\nwindow.onscroll = ShowBtnScroll;,___________________________________,On Resize,window.onresize = function () {console.log(`Window Resize`);};|}"
     ],
     "description": "DOM [Events]"
   },
   /*
   Todo *********		 Javascript   [ Class List ]   **********
   */
+  "DOM [Class List]": {
+    "prefix": "js class list",
+    "body": [
+      "${1|______________________________________________________________________,// Element ClassList 👉️ length add remove toggle,// Element ClassList 👉️ contains item(index) replace keys,// Element ClassList 👉️ entries item(index)forEach supports tostring values,// جالب قامة الكلاسات الموجودة فى العنصر,console.log(element.classList);,console.log(element.classList.value);,(function joinArrayToString() { `use strict`; function ats(...a) {    return a.join(` `); } let array = element.classList;  console.log(ats(...array));})();,console.log(typeof element.classList);,_____________________________________,Add Class ,اضافة كلاس على الكلاسات الموجودة على العنصر,element.classList.add(`className `);,element.classList += `className `;, اضافة اكتر من كلاس على العنصر ,بتكتبهم زاى الاراى و بتفصل بينهم بى كومة,element.classList.add(`className `\\, `className2 `);,element.onclick = function () { `use strict`; element.classList.add(`className `);};,_____________________________________,Remove Class ,ازالة كلاس من الكلاسات الموجودة على العنصر,element.classList.add(`className `);,element.classList += `className `;, ازالة اكتر من كلاس من العنصر ,بتكتبهم زاى الاراى و بتفصل بينهم بى كومة,element.classList.add(`className `\\, `className2 `);,element.onclick = function () { `use strict`; element.classList.remove(`className `);};,_____________________________________,Toggle Class ,تبديل بين كلاس من الكلاسات الموجودة,element.classList.toggle(`className `);,element.onclick = function () {\n  `use strict`; \n  console.log(`This = Window Or Element Use Function: `\\, this); \n  element.classList.toggle(`className `); \n  // this.classList.toggle(`className `); \n};,_____________________________________,Class Length, جالب عدد الكلاسات الموجودة فى العنصر,element.classList.length;,console.log(element.classList.length);,_____________________________________,Contains Class,استخدامه مع الاف كندشان, للتحقق من كلاس معين هل هو موجود فى العنصر ولا لا,element.classList.contains(`className `);,console.log(element.classList.contains(`className `));,if (element.classList.contains(`className `)) { console.log(`Yes It Have This Class`);} else { console.log(`No It isn't Have This Class`);},_____________________________________,Item Class,  بتتعامل معاملة الاندكس فى عدد الكلاسات بتبدا من صفى, استخدامها فى تجيب عن طريقها كلاس معين فى قامة الكلاسات الموجودة فى العنصر,element.classList.item(`3`);,console.log(element.classList.item(`2`));,let ar = element.classList;for (let i = 0; i < ar.length; i++) {  console.log(ar[i]); console.log(typeof ar[i]);  console.log(typeof ar);},_____________________________________,Replace Class,تغير قيمة كلاس قديم الى قيمة جديدة,element.classList.replace(`oldClass`\\, `newClass`);,element.onclick = function () { `use strict`; element.classList.replace(`oldClass`\\, `newClass`);};,_____________________________________,element.classList.keys();,_____________________________________,element.classList.entries();,_____________________________________,element.classList.forEach(callback[ \\,thisArg]);,_____________________________________,element.classList.supports(token);,_____________________________________,element.classList.tostring(token);,_____________________________________,element.classList.values();|}"
+    ],
+    "description": "DOM [Class List]"
+  },
+  /*
+  Todo *********		 Javascript   [ Style ]   **********
+  */
+  "DOM [Style]": {
+    "prefix": "js style",
+    "body": [
+      "${1|______________________________________________________________________,// Element Style 👉️ Style,console.log(element.style);,_____________________________________, خواص السي اس اس اللى بضيفها على العنصر من الجافا اسكربت,element.style.color = `red`;,_____________________________________, الخاصية اللى من كلمتين ,كل علامة الداش بتبدلها بى اول حرف من الكلمة التانية بيكون كابتال,element.style.backgroundColor = `#222`;,_____________________________________, الكتابة بى خواص السي اس العدية,element.style.cssText = `color: #3498db; border:2px solid #000; font-size: 20px`;,_____________________________________,  ازالة خاصية من خواص السي اس اس على العنصر فى الان لاين استيل,element.style.removeProperty(`color`);,_____________________________________,  اضافة صفة على العنصر ان لاين,element.style.setProperty(`color`\\, `red`\\, `important`);,_____________________________________, ممكن تدخل على ملاف الاستيل االخاص بيك و تضيف فية و تحزف منو,console.log(document.styleSheets);,console.log(document.styleSheets[0]);,_____________________________________, هو كلاس موجود فى الملف الى سي اس اس وليه تنصيقات يسماء رولز cssRules,console.log(document.styleSheets[0].cssRules);,console.log(document.styleSheets[0].cssRules[1]);,console.log(document.styleSheets[0].cssRules[1].cssText);,console.log(document.styleSheets[0].cssRules[1].selectorText);,console.log(document.styleSheets[0].cssRules[1].style);,document.styleSheets[0].cssRules[1].style.removeProperty(`background`);,document.styleSheets[0].cssRules[1].style.setProperty(`color`\\, `blue`);|}"
+    ],
+    "description": "DOM [Style]"
+  },
+  /*
+  Todo *********		 Javascript   [ Add Element ]   **********
+  */
+  "Add Element": {
+    "prefix": "js add element",
+    "body": [
+      "${1|______________________________________________________________________,// Element 👉️ Append Child,بتضيف فى اخر العنصر ,element.appendChild(myElement);,_____________________________________,// Element 👉️ Before,بتضيف قبل العنصر بتقبال تكاست او عنصر,element.before(`Can Add Text`);,element.before(myBefore);,_____________________________________,// Element 👉️ After, بتضيف بعد العنصر بتقبال تكاست او عنصر,element.after(`Can Add Text`);,element.after(myAfter);,_____________________________________,// Element 👉️ Append, بتضيف فى اخر العنصر بتقبال تكاست او عنصر,element.append(`Can Add Text`);,element.append(myAppend);,_____________________________________,// Element 👉️ Prepend, بتضيف فى اول العنصر بتقبال تكاست او عنصر,element.prepend(`Can Add Text`);,element.prepend(myPrepend);,_____________________________________,// Element 👉️ Insert Before, بيضيف العنصر فى المكان اللى انت تختارو, بيحتاج العنصر اللى انت هتضيفو و بعدين هتضيفو فى فين فى العنصر,element.insertBefore(myInsertBefore\\, element.firstElementChild);|}"
+    ],
+    "description": "Add Element"
+  },
+  /*
+  Todo *********		 Javascript   [ Remove Element ]   **********
+  */
+  "Remove Element": {
+    "prefix": "js remove element",
+    "body": [
+      "${1|______________________________________________________________________,// Element 👉️ Remove, ازالة العنصر نهاء من الصفحة ,element.remove();,_____________________________________,ازالة طفل من العنصر الاب ,element.removeChild(element.firstElementChild);,element.removeChild(element.lastElementChild);,element.removeChild(element.childNodes[4]);|}"
+    ],
+    "description": "Remove Element"
+  },
   /*
   Todo *********		 Javascript   [ Form Validate ]   **********
   */
@@ -5233,6 +5610,61 @@
       "});"
     ],
     "description": "Work Plugin Magnific Group"
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  /*
+  8 **********		DARK LIGHT THEME		   *********
+  */
+  "DARK LIGHT THEME": {
+    "prefix": "js dark light theme",
+    "body": [
+      "/*",
+      "=====================================================",
+      "Todo =============== DARK LIGHT THEME ===============",
+      "=====================================================",
+      "",
+      "*/",
+      "const themeButton = document.getElementById(\"change-theme-icon\");",
+      "const darkTheme = \"dark-theme\";",
+      "const iconTheme = \"fa-sun\";",
+      "",
+      "// Previously selected topic (if user selected)",
+      "const selectedTheme = localStorage.getItem(\"selected-theme\");",
+      "const selectedIcon = localStorage.getItem(\"selected-icon\");",
+      "",
+      "// We obtain the current theme that the interface has by validating the dark-theme class",
+      "const getCurrentTheme = () =>",
+      "  document.body.classList.contains(darkTheme) ? \"dark\" : \"light\";",
+      "const getCurrentIcon = () =>",
+      "  themeButton.classList.contains(iconTheme) ? \"fa-moon\" : \"fa-sun\";",
+      "",
+      "// We validate if the user previously chose a topic",
+      "if (selectedTheme) {",
+      "  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark",
+      "  document.body.classList[selectedTheme === \"dark\" ? \"add\" : \"remove\"](",
+      "    darkTheme",
+      "  );",
+      "  themeButton.classList[selectedIcon === \"fa-moon\" ? \"add\" : \"remove\"](",
+      "    iconTheme",
+      "  );",
+      "}",
+      "",
+      "// Activate / deactivate the theme manually with the button",
+      "themeButton.addEventListener(\"click\", () => {",
+      "  console.log(`Toggle Theme`);",
+      "  // Add or remove the dark / icon theme",
+      "  document.body.classList.toggle(darkTheme);",
+      "  themeButton.classList.toggle(iconTheme);",
+      "  // We save the theme and the current icon that the user chose",
+      "  localStorage.setItem(\"selected-theme\", getCurrentTheme());",
+      "  localStorage.setItem(\"selected-icon\", getCurrentIcon());",
+      "});"
+    ],
+    "description": "DARK LIGHT THEME"
   },
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
