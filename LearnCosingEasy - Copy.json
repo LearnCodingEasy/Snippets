@@ -684,7 +684,7 @@
     "description": "Add Google Translate"
   },
   "Element Google Translate": {
-    "prefix": "html google translate",
+    "prefix": "html google translate Element",
     "body": ["<div id=\"google_translate_element\"></div>"],
     "description": "Add Google Translate"
   },
@@ -843,6 +843,7 @@
     ],
     "description": "html 2 اسلايدار  لغة ال"
   },
+  ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -4871,6 +4872,26 @@
       "${1|______________________________________________________________________,// Element 👉️ Remove, ازالة العنصر نهاء من الصفحة ,element.remove();,_____________________________________,ازالة طفل من العنصر الاب ,element.removeChild(element.firstElementChild);,element.removeChild(element.lastElementChild);,element.removeChild(element.childNodes[4]);|}"
     ],
     "description": "Remove Element"
+  },
+  /*
+  Todo *********		 Javascript   [ Traversing Element ]   **********
+  */
+  "Traversing Element => الانتقال بين العناصر": {
+    "prefix": "js traversing element",
+    "body": [
+      "${1|______________________________________________________________________,// Element 👉️ nextSibling, الشقيق التاى [  نوع كمانت او عنصر ],element.firstElementChild.nextSibling;,console.log(`Element: `, element.firstElementChild.nextSibling);,_____________________________________,// Element 👉️ previousSibling, الشقيق الصابق [  نوع كمانت او عنصر ],element.firstElementChild.previousSibling;,console.log(`Element: `, element.firstElementChild.previousSibling);,_____________________________________,// Element 👉️ nextElementSibling, الشقيق التاى [  نوع عنصر ],element.firstElementChild.nextElementSibling;,console.log(`Element: `, element.firstElementChild.nextElementSibling);,_____________________________________,// Element 👉️ previousElementSibling, الشقيق التاى [  نوع عنصر ],element.firstElementChild.previousElementSibling;,console.log(`Element: `, element.firstElementChild.previousElementSibling);,_____________________________________,// Element 👉️ parentElement,احصل على الوالدين للعنصر,element.parentElement,console.log(element.parentElement);,element.onclick = () => {console.log(element.parentElement);element.parentElement.classList.toggle(`className`);};|}"
+    ],
+    "description": "traversing Element"
+  },
+  /*
+  Todo *********		 Javascript   [ Clone Element ]   **********
+  */
+  "Clone Element => نسخ عنصر الى عنصر تانى": {
+    "prefix": "js clone element",
+    "body": [
+      "${1|______________________________________________________________________,// Element 👉️ Clone => Copy,// Clone Element => Copy Element To Another Element\n\n// Select Element Clone\n\nlet element = document.getElementById(`copy`);\n\n// Select Element Clone To It\n\nlet ElementPaste = document.getElementById(`paste`);\n// Clone Element\n\nlet Copy = element.cloneNode(true);\n\n// Add Clone Element To Another Element\n\nElementPaste.appendChild(Copy);\n\n|}"
+    ],
+    "description": "Clone Element => نسخ عنصر الى عنصر تانى"
   },
   /*
   Todo *********		 Javascript   [ Form Validate ]   **********
