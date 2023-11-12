@@ -1,0 +1,272 @@
+/* 
+  Write your custom styles here
+*/
+/* Website Chat GPT */
+/* 
+  Write your custom styles here
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+}
+
+/* Wrapper */
+body > div {
+  /*border: 0.1rem solid #f00;*/
+}
+
+/* Inner*/
+body > div > .relative {
+  /*border: 0.1rem solid #00f;*/
+}
+
+/* Sidbar */
+body > div > .relative > div:nth-child(1) {
+  /*border: 0.1rem solid #00f;*/
+}
+
+/* Content */
+body > div > .relative > div:nth-child(2) {
+  /*border: 0.1rem solid #00f;*/
+}
+
+/* Main */
+body > div > .relative > div:nth-child(2) main {
+  /*border: 0.1rem solid #00f;*/
+}
+
+body > div > .relative > div:nth-child(2) main > div:nth-child(1) {
+  /*border: 0.9rem solid #00f;*/
+}
+
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1) {
+  /*border: 0.9rem solid #00f;*/
+}
+
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div {
+  /*border: 0.9rem solid #00f;*/
+}
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div {
+  /*border: 0.9rem solid #00f;*/
+}
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div
+  > div {
+  /*border: 0.9rem solid #00f;*/
+}
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div
+  > div
+  > div {
+  /*border: 0.9rem solid #00f;*/
+}
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div
+  > div
+  > div
+  > div {
+  /*border: 0.9rem solid #00f;*/
+}
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div {
+  border-top: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid #fff;
+  border: 0.5rem solid #d4d4d4;
+  max-width: calc(100% - 50px);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(1) {
+  /*border: 0.2rem solid #fff;*/
+}
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2) {
+  /*border-top:  0.2rem solid #fff;*/
+  /*border-bottom:  0.2rem solid #fff;*/
+  direction: rtl;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2) p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div:nth-child(2)  pre {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem 0;
+  direction: ltr;
+  text-align: left;
+}
+/* Search Bar */
+
+body > div > .relative > div:nth-child(2) main > div:nth-child(1) > div {
+  /*border: 0.1rem solid #080;*/
+}
+
+body > div > .relative > div:nth-child(2) main > div:nth-child(1) > div form {
+  /*border: 0.1rem solid #080;*/
+}
+
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div form
+  > div {
+  flex-direction: row-reverse;
+  height: 150px;
+  /*border: 2px solid #f00;*/
+  border-radius: 10px;
+}
+
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div form
+  > div div:nth-child(1) {
+  /*border: 0.1rem solid #080;*/
+}
+
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div form
+  > div
+  > div:nth-child(2) {
+  border: 0.1rem solid #d4d4d4;
+  height: 100%;
+  border-radius: 10px;
+}
+
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div form
+  > div
+  > div:nth-child(2)
+  > div {
+  /*border: 0.1rem solid #080;*/
+  height: 100%;
+  overflow: auto;
+}
+
+body
+  > div
+  > .relative
+  > div:nth-child(2) main
+  > div:nth-child(1)
+  > div form
+  > div
+  > div:nth-child(2) textarea {
+  /*border: 0.1rem solid #080;*/
+  height: 600px !important;
+  overflow: auto;
+}

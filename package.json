@@ -1,0 +1,23 @@
+{
+  "name": "snippets-name",
+  "version": "1.0.0",
+  "description": "Global Snippets LCE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LearnCodingEasy/Snippets.git"
+  },
+  "keywords": [
+    "hossam-rashad",
+    "hossamrashad"
+  ],
+  "author": "Hossam Rashad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LearnCodingEasy/Snippets/issues"
+  },
+  "homepage": "https://github.com/LearnCodingEasy/Snippets#readme"
+}

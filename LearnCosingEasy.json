@@ -879,26 +879,88 @@
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   /* 
+  Todo ***************** Meta ***************** 
+  */
+  "Meta معلومات عن الصفحة  ": {
+    "prefix": "pug meta ",
+    "body": [
+      "//- Utf 8 تدعم اللغة العربية",
+      "//- وفائدته تحديد الترميز الخاص بالصفحة ونستخدم هنا الترميز العالمي ",
+      "//- Unicode Transformation Format ",
+      "//- والذي يدعم جميع اللغات والأحرف الخاصة بها.",
+      "meta(charset=\"UTF-8\")",
+      "",
+      "//- وفائدته وضع وصف الصفحة فعندما تبحث عن موقع معين في ",
+      "//- Google",
+      "//- Meta Description  مثلا تجد إسم الموقع وتحته نص يوصف الموقع وهذا هو ال  .",
+      "meta(name=\"description\" content=\"Your Website Description\")",
+      "",
+      "//- Copyright وفائدتها أن تخبر الشخص الذي يتصفح موقعك أنه لديك مواد عليها حقوق فكرية ",
+      "//- Content وهي مملوكة لشركتك أو موقعك المكتوب داخل ال  .",
+      "meta(name=\"copyright\" content=\"Your Company Or Brand Name\")",
+      "",
+      "//- عن طريقه يمكنك توجيه عناكب البحث ",
+      "//- Search Spiders ",
+      "//- Indexing الخاصة بمحركات البحث لما تريد فيمكنك تحديد الصفحات التي تريد أن تقوم بعمل  ",
+      "//- لها والصفحات التي لا تريد وتتحكم كاملا فيما يحدث",
+      "meta(name=\"robots\" content=\"index, follow\")",
+      "",
+      "//- Author من اسمها ",
+      "//- وهو المؤلف أو الكاتب الذي كتب محتوى الصفحة .",
+      "meta(name=\"author\" content=\"Learn Coding Easy\")",
+      "",
+      "//- وهو الجزء الخاص بمراجعة الصفحة فيمكنك ",
+      "//- وضع التاريخ الذي قمت بمراجعة الصفحة فيه ",
+      "//- وعلى سبيل المثال قمت بكتابة مقال معين يمكن أن تضع هذا الجزء لتوضح انك قمت بتحديث المقال مؤخرا ",
+      "//- ليظهر في محرك البحث للشخص قبل الدخول على المقال",
+      "meta(name=\"revised\" content=\"Tuesday, July 20th, 2022, 10:15 am\")",
+      "",
+      "//- Internet Explorer هذا يشير إلى أن المستعرض يجب أن يستخدم آخر إصدار متوافق من ",
+      "//- المتاح لديه لعرض الصفحة بشكل صحيح.",
+      "meta(http-equiv=\"X-UA-Compatible\" content=\"IE=edge\")",
+      "",
+      "//- Viewport وفائدته التحكم في ال ",
+      "//- Width=Device-Width والجزء الخاص بال ",
+      "//- Device من اسمه فهو يجعل العرض الخاص بالموقع بنفس عرض ال ",
+      "//- Initial-Scale التي تشاهد الموقع منها والجزء الخاص ب ",
+      "//- Zoom Level يقوم بتعديل ال ",
+      "//-  بمجرد تحميل الصفحة ليكون الوضع المناسب لعرض الموقع.",
+      "meta(name=\"viewport\" content=\"width=device-width, initial-scale=1.0\")",
+      "",
+      "// Open Graph ",
+      "//- إظهار البيانات المتعلقة بصفحات الويب عند مشاركتها على منصات التواصل الاجتماعي مثل فيسبوك وتويتر ولينكدإن وغيرها.",
+      "meta(property=\"og:title\" content=\"Tabib On Time\")",
+      "meta(property=\"og:description\" content=\"Welcome to my website\")",
+      "meta(property=\"og:image\" content=\"https://example.com/images/my-image.png\")",
+      ""
+    ],
+    "description": "معلومات عن الصفحة"
+  },
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /* 
   Todo *********** Element *********** 
   */
   "div & class": {
     "prefix": "div",
-    "body": ["div(class=\"\")"],
+    "body": ["div(class='${1:className}')"],
     "description": "div & class"
   },
   "div & class & id": {
     "prefix": "div id",
-    "body": ["div(class=\"\" id=\"\")"],
+    "body": ["div(class='${1:className}' id=\"\")"],
     "description": "div & class & id"
   },
   "p & class ": {
     "prefix": "p",
-    "body": ["p(class=\"\")"],
+    "body": ["p(class='${1:className}')"],
     "description": "p & class "
   },
   "p& class & id": {
     "prefix": "p id",
-    "body": ["p(class=\"\" id=\"\")"],
+    "body": ["p(class='${1:className}' id=\"\")"],
     "description": "p & class & id"
   },
   "i class": {
@@ -915,6 +977,25 @@
     "prefix": "a id",
     "body": ["a(href=\"#\" class=\"\" id=\"\")"],
     "description": "a class & id"
+  },
+  "a مكالمة واتس اب": {
+    "prefix": "pug a call whatsapp",
+    "body": [
+      "a(href=\"https://wa.me/+201101853042\" class=\"\" target=\"_blank\") Call"
+    ],
+    "description": "مكالمة واتس اب"
+  },
+  "a مكالمة التلفون": {
+    "prefix": "pug a call phone",
+    "body": ["a(href=\"tel:+201101853042\" class=\"\" target=\"_blank\") Call"],
+    "description": "a مكالمة التلفون"
+  },
+  "a ارسال رسالة الى الاميل": {
+    "prefix": "pug a send message",
+    "body": [
+      "a(href=\"mailto:learncodingeasy0100@gmail.com\" class=\"\" target=\"_blank\") Call"
+    ],
+    "description": "a ارسال رسالة الى الاميل"
   },
   "span class": {
     "prefix": "span",
@@ -945,6 +1026,16 @@
     "prefix": "li id",
     "body": ["li(class=\"\" id=\"\")"],
     "description": "li class id"
+  },
+  "section class": {
+    "prefix": "section class",
+    "body": ["section(class='${1:className}')"],
+    "description": "section class"
+  },
+  "section class id": {
+    "prefix": "section class id",
+    "body": ["section(class='${1:className}' id='${1:idName}')"],
+    "description": "section class id"
   },
   /* 
   Todo *********** Cdn *********** 
@@ -1332,7 +1423,44 @@
     ],
     "description": "Plugin magnific Group"
   },
-
+  /* 
+  Todo *********** Swiper *********** 
+  */
+  "pug plugin swiper basic": {
+    "prefix": "pug plugin swiper basic",
+    "body": [
+      "// =============== swiper ===============",
+      "// =============== https://swiperjs.com/ ===============",
+      "// link(rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css\")",
+      "// script(src=\"https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js\") ",
+      "// Swiper  ",
+      "div(class=\"swiper mySwiper\")",
+      "  // Wrapper",
+      "  div(class=\"swiper-wrapper\")",
+      "    // Inner",
+      "    div(class=\"swiper-slide\") Slider 1",
+      "    div(class=\"swiper-slide\") Slider 2",
+      "    div(class=\"swiper-slide\") Slider 3",
+      "    div(class=\"swiper-slide\") Slider 4",
+      "    div(class=\"swiper-slide\") Slider 5",
+      "    div(class=\"swiper-slide\") Slider 6",
+      "    div(class=\"swiper-slide\") Slider 7",
+      "    div(class=\"swiper-slide\") Slider 8",
+      "    div(class=\"swiper-slide\") Slider 9",
+      "  // Arrow Left And Right",
+      "  div( class=\"swiper-button-next\")",
+      "  div( class=\"swiper-button-prev\")",
+      "  // Button Bottom ",
+      "  div( class=\"swiper-pagination\")",
+      "  // Auto Play",
+      "  div( class=\"autoplay-progress\")",
+      "    svg( viewBox=\"0 0 48 48\")",
+      "      circle( cx=\"24\" cy=\"24\" r=\"20\")",
+      "    span(class=\"\")",
+      ""
+    ],
+    "description": "pug swiper owl basic"
+  },
   /* 
   Todo *********** Fontawesome *********** 
   */
@@ -1355,6 +1483,81 @@
     "prefix": "fontawesome twitter",
     "body": ["i(class=\"fab fa-twitter twitter-icon\")"],
     "description": "twitter"
+  },
+  "whatsapp": {
+    "prefix": "fontawesome whatsapp",
+    "body": ["i(class=\"fab fa-whatsapp whatsapp-icon\")"],
+    "description": "whatsapp"
+  },
+  "coffee": {
+    "prefix": "fontawesome coffee",
+    "body": ["i(class=\"fas fa-coffee coffee-icon\")"],
+    "description": "coffee"
+  },
+  "coffee 2": {
+    "prefix": "fontawesome coffee",
+    "body": ["i(class=\"fas fa-mug-hot coffee-icon\")"],
+    "description": "coffee 2"
+  },
+  "arrow": {
+    "prefix": "fontawesome arrow",
+    "body": [
+      "i(class=\"fas ${1|👉️ Up,fa-arrow-up,fa-arrow-circle-up,fa-arrow-alt-circle-up,fa-long-arrow-alt-up,fa-sort-up,fa-chevron-up,fa-chevron-circle-up,fa-angle-up,fa-angle-double-up,👉️ Down,fa-arrow-down,fa-arrow-circle-down,fa-arrow-alt-circle-down,fa-long-arrow-alt-down,fa-sort-down,fa-chevron-down,fa-chevron-circle-down,fa-angle-down,fa-angle-double-down,👉️ Right,fa-arrow-right,fa-arrow-circle-right,fa-long-arrow-alt-right,fa-chevron-right,fa-chevron-circle-right,fa-angle-right,fa-hand-point-right,fa-angle-double-right,👉️ Left,fa-arrow-left,fa-arrow-circle-left,fa-long-arrow-alt-left,fa-chevron-left,fa-chevron-circle-left,fa-angle-left,fa-hand-point-left,fa-angle-double-left|} iconName-icon\")"
+    ],
+    "description": "coffee 2"
+  },
+  "call": {
+    "prefix": "fontawesome phone",
+    "body": [
+      "i(class=\"fas ${1|fa-phone,fa-phone-alt,fa-phone-square-alt,fa-mobile,fa-mobile-alt,fa-phone-volume,fa-microphone,fa-microphone-alt|} phone-icon\")"
+    ],
+    "description": "coffee 2"
+  },
+  "message": {
+    "prefix": "fontawesome message",
+    "body": [
+      "i(class=\"fas ${1|fa-envelope,fa-envelope-open,fa-envelope-square,fa-comments,fa-comment-alt,fa-comment-slash,fa-sms,fa-inbox,fa-comments-dollar|} phone-icon\")"
+    ],
+    "description": "message"
+  },
+  "map": {
+    "prefix": "fontawesome map",
+    "body": [
+      "i(class=\"fas ${1|fa-map,fa-map-marker-alt,fa-map-pin,fa-map-marker,fa-map-marked-alt,fa-map-signs,fa-street-view,fa-globe,fa-directions,fa-location-arrow,fa-globe-asia|} phone-icon\")"
+    ],
+    "description": "map"
+  },
+  "Close": {
+    "prefix": "fontawesome close",
+    "body": [
+      "i(class=\"${1|👉️ Fas,fas fa-times,fas fa-window-close,fas fa-times-circle,👉️ Far,far fa-times-circle,far fa-window-close|} close-icon\")"
+    ],
+    "description": "Close 2"
+  },
+  /* 
+  Todo *********** CopyRight *********** 
+  */
+  "سنة حقوق التأليف والنشر عربي": {
+    "prefix": "pug copy right year",
+    "body": [
+      "// Copyright",
+      "div(class='copyright')",
+      "  p(class=\"text\") © جميع الحقوق محفوظة  ",
+      "    a(href='https://learncodingeasy-51672.web.app/' target=\"_blank\")  المصدر ",
+      "    span(class=\"copyrightYear\")"
+    ],
+    "description": "سنة حقوق التأليف والنشر عربي"
+  },
+  "سنة حقوق التأليف والنشر English": {
+    "prefix": "pug copy right year en",
+    "body": [
+      "// Copyright",
+      "div(class='copyright')",
+      "  p(class=\"text\") © All Rights Are Save  ",
+      "    a(href='https://learncodingeasy-51672.web.app/' target=\"_blank\")  Source ",
+      "    span(class=\"copyrightYear\")"
+    ],
+    "description": "سنة حقوق التأليف والنشر English"
   },
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -1613,10 +1816,33 @@
   /*
   Todo: **********	Css	Media			   *********
   */
-  "جميع الشاشات": {
-    "prefix": "css media all",
+
+  "Console جميع الشاشات": {
+    "prefix": "css media Console all",
     "body": [
-      "/* Small Devices (Phones, Less Than 575.98px) = Bootstrap V5 Xs */",
+      "/* Console Devices */",
+      "/* Mobil S, Less Than 320px */",
+      "@media screen and (max-width: 320px) {}",
+      "/* Mobil M, Less Than 375px */",
+      "@media screen and (min-width: 321px) and (max-width: 375px) {}",
+      "/* Mobil L, Less Than 425px */",
+      "@media screen and (min-width: 376px) and (max-width: 425px) {}",
+      "/* Tablet , Less Than 768px */",
+      "@media screen and (min-width: 426px) and (max-width: 768px) {}",
+      "/* Laptop , Less Than 1024px */",
+      "@media screen and (min-width: 769px) and (max-width: 1024px) {}",
+      "/* Laptop L, Less Than 1440px */",
+      "@media screen and (min-width: 1025px) and (max-width: 1440px) {}",
+      "/* 4K , Less Than 2560px */",
+      "@media screen and (min-width: 1441px) and (max-width: 2560px) {}"
+    ],
+    "description": "Console جميع الشاشات"
+  },
+  "Bootstrap جميع الشاشات": {
+    "prefix": "css media Bootstrap all",
+    "body": [
+      "/* Bootstrap Devices */",
+      "/* Small Devices (Mobail, Less Than 575.98px) = Bootstrap V5 Xs */",
       "@media screen and (max-width: 575.98px) {}",
       "/* Medium Devices (Phones, 576px And 677px) = Bootstrap V5 Sm */",
       "@media screen and (min-width:576px) and (max-width:677px) {}",
@@ -1631,7 +1857,7 @@
       "/* Large Devices (Large Desktops, 1400px And Up) = Bootstrap V5 Xxl */",
       "@media screen and (min-width:1400px) {}"
     ],
-    "description": "جميع الشاشات"
+    "description": "Bootstrap جميع الشاشات"
   },
   /*
   Todo: **********	Css	Comment			   *********
@@ -1640,49 +1866,6 @@
     "prefix": "css comment",
     "body": ["/* My Style */"],
     "description": "كمانت "
-  },
-  /*
-  Todo: **********		Css Color			   *********
-  */
-  "لون مكتبة Vue 1": {
-    "prefix": "css color vue ",
-    "body": ["#42b883"],
-    "description": "لون مكتبة Vue"
-  },
-  "لون مكتبة Vue 2": {
-    "prefix": "css color vue 2",
-    "body": ["#35495e"],
-    "description": "لون مكتبة Vue"
-  },
-  "لون javascript ": {
-    "prefix": "css color javascript",
-    "body": ["#f7df1e"],
-    "description": " لون مكتبة javascript "
-  },
-  "لون html": {
-    "prefix": "css color html",
-    "body": ["#e34f26"],
-    "description": "لون مكتبة html"
-  },
-  "لون github": {
-    "prefix": "css color github ",
-    "body": ["#333"],
-    "description": "لون مكتبة github"
-  },
-  "لون facebook ": {
-    "prefix": "css color facebook",
-    "body": ["#1877f2"],
-    "description": "لون facebook "
-  },
-  "لون twitter ": {
-    "prefix": "css color twitter",
-    "body": ["#1da1f2"],
-    "description": "لون twitter "
-  },
-  "لون youTube ": {
-    "prefix": "css color youTube",
-    "body": ["#ff0000"],
-    "description": "لون youTube "
   },
   /*
   Todo: **********		Css selection			   *********
@@ -1965,7 +2148,6 @@
   /*
   Todo: **********		 plugin	Style		   *********
   */
-
   /*
   Todo: **********		Nivo	Slider		   *********
   */
@@ -2883,6 +3065,9 @@
     ],
     "description": "Css 2 اسلايدار التنصيقات الخاصة بى لغة ال"
   },
+  /*
+  Todo: **********		Count To		   *********
+  */
   "count to": {
     "prefix": "js plugin count to",
     "body": [
@@ -2964,6 +3149,35 @@
   /////////////////////////////////////////////
   /////////////////////////////////////////////
   /////////////////////////////////////////////
+  /*
+  Todo: **********		Scss Element			   *********
+  */
+  "صورة الخلفية": {
+    "prefix": "scss image background",
+    "body": [
+      "background-image: url(../images/);",
+      "background-position: center center;",
+      "background-repeat: no-repeat;",
+      "background-size: cover;"
+    ],
+    "description": "صورة الخلفية"
+  },
+  "كيفية جعل عنصر الخلفية": {
+    "prefix": "scss overlay element",
+    "body": [
+      ".overlay {",
+      "  // content: \"\";",
+      "  position: absolute;",
+      "  top: 0;",
+      "  left: 0;",
+      "  width: 100%;",
+      "  height: 100%;",
+      "  background-color: var(--color-third-overlay-dark-theme);",
+      "  z-index: 1;",
+      "}"
+    ],
+    "description": "كيفية جعل عنصر الخلفية"
+  },
   /*
   Todo: **********		Scss Start File			   *********
   */
@@ -3222,6 +3436,54 @@
     "prefix": "h100",
     "body": ["height: 100%;"],
     "description": "height: 100%;"
+  },
+  /*
+  Todo: **********		Css Color			   *********
+  */
+  "لون مكتبة Vue 1": {
+    "prefix": "scss color vue ",
+    "body": ["#42b883"],
+    "description": "لون مكتبة Vue"
+  },
+  "لون مكتبة Vue 2": {
+    "prefix": "scss color vue 2",
+    "body": ["#35495e"],
+    "description": "لون مكتبة Vue"
+  },
+  "لون javascript ": {
+    "prefix": "scss color javascript",
+    "body": ["#f7df1e"],
+    "description": " لون مكتبة javascript "
+  },
+  "لون html": {
+    "prefix": "scss color html",
+    "body": ["#e34f26"],
+    "description": "لون مكتبة html"
+  },
+  "لون github": {
+    "prefix": "scss color github ",
+    "body": ["#333"],
+    "description": "لون مكتبة github"
+  },
+  "لون facebook ": {
+    "prefix": "scss color facebook",
+    "body": ["#1877f2"],
+    "description": "لون facebook "
+  },
+  "لون twitter ": {
+    "prefix": "scss color twitter",
+    "body": ["#1da1f2"],
+    "description": "لون twitter "
+  },
+  "لون youTube ": {
+    "prefix": "scss color youTube",
+    "body": ["#ff0000"],
+    "description": "لون youTube "
+  },
+  "لون whatsapp ": {
+    "prefix": "scss color whatsapp",
+    "body": ["${1|#075e54,#128c7e,#25d366|}"],
+    "description": "لون whatsapp "
   },
   /*
   Todo: **********		Scss plugin	Style		   *********
@@ -4159,6 +4421,119 @@
     "description": "owl slider"
   },
   /*
+  Todo: **********		Swiper	Slider		   *********
+  */
+  "scss plugin swiper basic": {
+    "prefix": "scss plugin swiper basic",
+    "body": [
+      "    position: relative;",
+      "    min-height: 400px;",
+      "    .swiper {",
+      "      width: 100%;",
+      "      height: 100%;",
+      "      .swiper-wrapper {",
+      "        height: 100%;",
+      "        .swiper-slide {",
+      "          height: 100%;",
+      "          text-align: center;",
+      "          font-size: 18px;",
+      "          background: #fff;",
+      "          display: flex;",
+      "          justify-content: center;",
+      "          align-items: center;",
+      "          img {",
+      "            display: block;",
+      "            width: 100%;",
+      "            height: 100%;",
+      "            object-fit: cover;",
+      "          }",
+      "          &.swiper-slide-active {",
+      "            display: block;",
+      "          }",
+      "        }",
+      "      }",
+      "      // Button Left & Right",
+      "      .swiper-button-next,",
+      "      .swiper-button-prev {",
+      "        font-size: 15px;",
+      "        color: #fff;",
+      "        background: #33333375;",
+      "        width: 30px;",
+      "        height: 100px;",
+      "        line-height: 100px;",
+      "        margin-top: -50px;",
+      "        text-align: center;",
+      "        transition: all 0.4s linear;",
+      "        left: -50px;",
+      "        opacity: 0.5;",
+      "        display: flex;",
+      "        justify-content: center;",
+      "        align-items: center;",
+      "        text-decoration: none;",
+      "        font-size: 25px;",
+      "        &:hover {",
+      "          background: #333;",
+      "        }",
+      "      }",
+      "",
+      "      // Button Bottom Click",
+      "      .swiper-pagination {",
+      "        display: flex;",
+      "        justify-content: start;",
+      "        align-items: center;",
+      "        .swiper-pagination-bullet {",
+      "          width: 30px;",
+      "          border-radius: 5px;",
+      "          &.swiper-pagination-bullet-active {",
+      "            background-color: var(--color-first-slider);",
+      "          }",
+      "        }",
+      "      }",
+      "      // Auto Play",
+      "      .autoplay-progress {",
+      "        position: absolute;",
+      "        right: 16px;",
+      "        bottom: 16px;",
+      "        z-index: 10;",
+      "        width: 48px;",
+      "        height: 48px;",
+      "        display: flex;",
+      "        align-items: center;",
+      "        justify-content: center;",
+      "        font-weight: bold;",
+      "        color: var(--color-first-slider);",
+      "        svg {",
+      "          --progress: 0;",
+      "          position: absolute;",
+      "          left: 0;",
+      "          top: 0px;",
+      "          z-index: 10;",
+      "          width: 100%;",
+      "          height: 100%;",
+      "          stroke-width: 4px;",
+      "          stroke: var(--color-first-slider);",
+      "          fill: none;",
+      "          stroke-dashoffset: calc(125.6 * (1 - var(--progress)));",
+      "          stroke-dasharray: 125.6;",
+      "          transform: rotate(-90deg);",
+      "        }",
+      "      }",
+      "      &:hover {",
+      "        .swiper-button-next {",
+      "          opacity: 1;",
+      "          right: 0.5rem;",
+      "          left: auto;",
+      "        }",
+      "        .swiper-button-prev {",
+      "          opacity: 1;",
+      "          left: 0.5rem;",
+      "        }",
+      "      }",
+      "    }"
+    ],
+    "description": "scss plugin swiper basic"
+  },
+  /*
   Todo: **********		Animation		   *********
   */
   "animation background 1": {
@@ -4184,6 +4559,7 @@
     ],
     "description": "animation background 1"
   },
+
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -4224,7 +4600,7 @@
   "بداية صفحة جديدة": {
     "prefix": "vue new page",
     "body": [
-      "<template><div class=\"\"></div></template>",
+      "<template><div class=\"Component-Name\"></div></template>",
       "",
       "<script>",
       "export default { name: \"\", };",
@@ -4495,7 +4871,85 @@
     "body": ["this.$swal(\"Copy Done!!!\");"],
     "description": "اضافة السوايت الايرت"
   },
-
+  "شرك كيف استخدام ال Font Awesome": {
+    "prefix": "vue plugin font awesome",
+    "body": [
+      "<!-- ",
+      "Use Font Awesome From Cdn",
+      "Font Awesome",
+      "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\" />",
+      "Use",
+      "<i class=\"fas fa-home fa-1x fa-fw\"></i>",
+      "",
+      "_______________________________________________________",
+      "_______________________________________________________",
+      "",
+      "1 - Install",
+      "npm i --save @fortawesome/fontawesome-svg-core",
+      "npm i --save @fortawesome/vue-fontawesome@prerelease",
+      "npm i --save @fortawesome/free-solid-svg-icons",
+      "npm i --save @fortawesome/free-brands-svg-icons",
+      "npm i --save @fortawesome/free-regular-svg-icons",
+      "",
+      "2 - Import In File Index.js",
+      "Font Awesome",
+      "import { FontAwesomeIcon } from \"@fortawesome/vue-fontawesome\";",
+      "",
+      "Add SVG Core",
+      "import { library } from \"@fortawesome/fontawesome-svg-core\";",
+      "",
+      "Free Icons Styles",
+      "import { fas } from \"@fortawesome/free-solid-svg-icons\";",
+      "import { fab } from \"@fortawesome/free-brands-svg-icons\";",
+      "import { far } from \"@fortawesome/free-regular-svg-icons\";",
+      "",
+      "Add Free Icons Styles To SVG Core",
+      "library.add(fas, far, fab);",
+      "",
+      "createApp(App).use(store).use(router).component(\"fa\", FontAwesomeIcon).mount(\"#app\");",
+      "",
+      "3 - Use",
+      "- Solid",
+      "<fa icon=\"user\" />",
+      "<fa :icon=\"['fas', 'user']\"></fa>",
+      "- Brands",
+      "<fa icon=\"font-awesome\" />",
+      "<fa :icon=\"['fab', 'font-awesome']\"></fa>",
+      "- Regular",
+      "<fa icon=\"window-close\" />",
+      "<fa :icon=\"['far','window-close']\"></fa>",
+      "-->"
+    ],
+    "description": "شرك كيف استخدام ال Font Awesome"
+  },
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  /*
+  Todo: *********		 Vue Error			   ********
+  */
+  /////////////////////////////////////////////
+  /////////////////////////////////////////////
+  "تعطيل السطر التالي": {
+    "prefix": "vue error next line",
+    "body": [
+      "// eslint-disable-next-line prettier/prettier"
+    ],
+    "description": "تعطيل السطر التالي"
+  },
+  "تعطيل  Html": {
+    "prefix": "vue error disable Html",
+    "body": [
+      "<!-- eslint-disable prettier/prettier -->"
+    ],
+    "description": "تعطيل "
+  },
+  "تعطيل  Javascript": {
+    "prefix": "vue error disable Javascript",
+    "body": [
+      "/* eslint-disable prettier/prettier */"
+    ],
+    "description": "تعطيل "
+  },
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -4856,7 +5310,7 @@
   /*
   Todo *********		 Javascript   [ Add Element ]   **********
   */
-  "Add Element": {
+  "DOM Add Element": {
     "prefix": "js add element",
     "body": [
       "${1|______________________________________________________________________,// Element 👉️ Append Child,بتضيف فى اخر العنصر ,element.appendChild(myElement);,_____________________________________,// Element 👉️ Before,بتضيف قبل العنصر بتقبال تكاست او عنصر,element.before(`Can Add Text`);,element.before(myBefore);,_____________________________________,// Element 👉️ After, بتضيف بعد العنصر بتقبال تكاست او عنصر,element.after(`Can Add Text`);,element.after(myAfter);,_____________________________________,// Element 👉️ Append, بتضيف فى اخر العنصر بتقبال تكاست او عنصر,element.append(`Can Add Text`);,element.append(myAppend);,_____________________________________,// Element 👉️ Prepend, بتضيف فى اول العنصر بتقبال تكاست او عنصر,element.prepend(`Can Add Text`);,element.prepend(myPrepend);,_____________________________________,// Element 👉️ Insert Before, بيضيف العنصر فى المكان اللى انت تختارو, بيحتاج العنصر اللى انت هتضيفو و بعدين هتضيفو فى فين فى العنصر,element.insertBefore(myInsertBefore\\, element.firstElementChild);|}"
@@ -4866,7 +5320,7 @@
   /*
   Todo *********		 Javascript   [ Remove Element ]   **********
   */
-  "Remove Element": {
+  "DOM Remove Element": {
     "prefix": "js remove element",
     "body": [
       "${1|______________________________________________________________________,// Element 👉️ Remove, ازالة العنصر نهاء من الصفحة ,element.remove();,_____________________________________,ازالة طفل من العنصر الاب ,element.removeChild(element.firstElementChild);,element.removeChild(element.lastElementChild);,element.removeChild(element.childNodes[4]);|}"
@@ -4876,7 +5330,7 @@
   /*
   Todo *********		 Javascript   [ Traversing Element ]   **********
   */
-  "Traversing Element => الانتقال بين العناصر": {
+  "DOM Traversing Element => الانتقال بين العناصر": {
     "prefix": "js traversing element",
     "body": [
       "${1|______________________________________________________________________,// Element 👉️ nextSibling, الشقيق التاى [  نوع كمانت او عنصر ],element.firstElementChild.nextSibling;,console.log(`Element: `, element.firstElementChild.nextSibling);,_____________________________________,// Element 👉️ previousSibling, الشقيق الصابق [  نوع كمانت او عنصر ],element.firstElementChild.previousSibling;,console.log(`Element: `, element.firstElementChild.previousSibling);,_____________________________________,// Element 👉️ nextElementSibling, الشقيق التاى [  نوع عنصر ],element.firstElementChild.nextElementSibling;,console.log(`Element: `, element.firstElementChild.nextElementSibling);,_____________________________________,// Element 👉️ previousElementSibling, الشقيق التاى [  نوع عنصر ],element.firstElementChild.previousElementSibling;,console.log(`Element: `, element.firstElementChild.previousElementSibling);,_____________________________________,// Element 👉️ parentElement,احصل على الوالدين للعنصر,element.parentElement,console.log(element.parentElement);,element.onclick = () => {console.log(element.parentElement);element.parentElement.classList.toggle(`className`);};|}"
@@ -4886,12 +5340,22 @@
   /*
   Todo *********		 Javascript   [ Clone Element ]   **********
   */
-  "Clone Element => نسخ عنصر الى عنصر تانى": {
+  "DOM Clone Element => نسخ عنصر الى عنصر تانى": {
     "prefix": "js clone element",
     "body": [
       "${1|______________________________________________________________________,// Element 👉️ Clone => Copy,// Clone Element => Copy Element To Another Element\n\n// Select Element Clone\n\nlet element = document.getElementById(`copy`);\n\n// Select Element Clone To It\n\nlet ElementPaste = document.getElementById(`paste`);\n// Clone Element\n\nlet Copy = element.cloneNode(true);\n\n// Add Clone Element To Another Element\n\nElementPaste.appendChild(Copy);\n\n|}"
     ],
     "description": "Clone Element => نسخ عنصر الى عنصر تانى"
+  },
+  /*
+  Todo *********		 Javascript   [ Add Event Listener ]   **********
+  */
+  "Javascript   [ Add Event Listener ]": {
+    "prefix": "js add event listener",
+    "body": [
+      "${1|_________________________________________________________________,Element 👉️ Add Event Listener  =>  ,هى اضافة حداث على الاحداث الموجودة فى العنصر,مميزاتها انو هى مبتاصرش على الاحداث الموجودة على العنصر,ممكن تحط اكتر من ايفانت على نفس العنصر,ممكن تحط الايفان نفسها على العنصر بس بتنفاز اكشان تانى,بتخرج خطاى فى حالة حدوث خطا قبل تشغيل الفانكشان,ممكن تحط الايفانت على عنصر مش موجود لسة فى الصفحة,// Calling Function\nfunction funcOne() {\n  console.log(`Message From OnClick 1`);\n}\nmyBtn.addEventListener(`click`\\, funcOne);,// Anonymous Function\nmyBtn.addEventListener(`click`\\, function () {\n  console.log(`Message From add Event Listener `);\n});,ممكن تحط الايفانت على عنصر مش موجود لسة فى الصفحة,myBtn.addEventListener(`click`\\, function (e) {\n  e.preventDefault();\n  let newBtn = myBtn.cloneNode(true);\n  newBtn.className = `clone`;\n  document.body.appendChild(newBtn);\n});\ndocument.addEventListener(`click`\\, function (e) {\n  e.preventDefault();\n  if (e.target.className === `clone`) {\n    console.log(`Iam Cloned`);\n    let newBtn = myBtn.cloneNode(true);\n    newBtn.className = `clone`;\n    document.body.appendChild(newBtn);\n  }\n});|}"
+    ],
+    "description": "Javascript   [ Add Event Listener ]"
   },
   /*
   Todo *********		 Javascript   [ Form Validate ]   **********
@@ -4903,6 +5367,57 @@
     ],
     "description": "DOM [Form Validate ]"
   },
+  /*
+  Todo *********		 Javascript   [ Date & Time ]   **********
+  */
+  "جميع خواص التاريخ  و الوقت": {
+    "prefix": "js date & time",
+    "body": [
+      "// تاريخ ووقت",
+      "let date = new Date();",
+      "console.log('date: ', date);",
+      "// السنة بالأربعة أرقام",
+      "const year = date.getFullYear(); ",
+      "console.log('year: ', year);",
+      "// الشهر بين 0 و 11",
+      "// نضيف 1 لأن الشهور تبدأ من 0",
+      "// const month = date.getMonth(); ",
+      "const month = date.getMonth() + 1; ",
+      "console.log('month: ', month);",
+      "// اليوم بين 1 و 31",
+      "const day = date.getDate(); ",
+      "console.log('day: ', day);",
+      "// الساعة بين 0 و 23",
+      "const hours = date.getHours(); ",
+      "console.log('hours: ', hours);",
+      "// الدقائق بين 0 و 59",
+      "const minutes = date.getMinutes(); ",
+      "console.log('minutes: ', minutes);",
+      "// الثواني بين 0 و 59",
+      "const seconds = date.getSeconds(); ",
+      "// الجزء الصغير من الثانية بين 0 و 999",
+      "const milliseconds = date.getMilliseconds(); ",
+      "console.log('milliseconds: ', milliseconds);",
+      "const weekday = date.getDay();",
+      "console.log('weekday: ', weekday);",
+      "// السنة/الشهر/اليوم",
+      "const dateString = `${day}/${month}/${year}`;",
+      "console.log(dateString);",
+      "",
+      "// object إنشاء  تاريخ ووقت",
+      "let now = new Date();",
+      "let objectCreatedAt = {",
+      "  date: now.getDate() + \"/\" + (now.getMonth() + 1) + \"/\" + now.getFullYear(),",
+      "  time: now.getHours() + \":\" + now.getMinutes() + \":\" + now.getSeconds()",
+      "};",
+      "console.log('objectCreatedAt: ', objectCreatedAt);",
+      "console.log('objectCreatedAt: ', `${objectCreatedAt.date}/${objectCreatedAt.time}`);"
+    ],
+    "description": "جميع خواص التاريخ  و الوقت"
+  },
+  /*
+  Todo *********		 Javascript   [ Bom Message ]   **********
+  */
   /*
   Todo *********		 Javascript   [ Function Google Translate ]   **********
   */
@@ -5632,6 +6147,43 @@
     ],
     "description": "Work Plugin Magnific Group"
   },
+  /* 
+  Todo *********** Swiper *********** 
+  */
+  "Work Plugin swiper basic": {
+    "prefix": "js plugin swiper ",
+    "body": [
+      "const progressCircle = document.querySelector(\".autoplay-progress svg\");",
+      "const progressContent = document.querySelector(\".autoplay-progress span\");",
+      "var swiper = new Swiper(\".mySwiper\", {",
+      "  spaceBetween: 30,",
+      "  centeredSlides: true,",
+      "  autoplay: {",
+      "    delay: 500000,",
+      "    disableOnInteraction: false,",
+      "  },",
+      "  pagination: {",
+      "    el: \".swiper-pagination\",",
+      "    clickable: true,",
+      "  },",
+      "  navigation: {",
+      "    nextEl: \".swiper-button-next\",",
+      "    prevEl: \".swiper-button-prev\",",
+      "  },",
+      "  on: {",
+      "    autoplayTimeLeft(s, time, progress) {",
+      "      progressCircle.style.setProperty(\"--progress\", 1 - progress);",
+      "      progressContent.textContent = `${Math.ceil(time / 1000)}s`;",
+      "    },",
+      "  },",
+      "});",
+      ""
+    ],
+    "description": "Work Plugin swiper basic"
+  },
+  /* 
+  Todo *********** Swiper *********** 
+  */
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -5686,6 +6238,26 @@
       "});"
     ],
     "description": "DARK LIGHT THEME"
+  },
+  /*
+  7 **********		Copy Right		   *********
+  */
+  "سنة حقوق التأليف والنشر": {
+    "prefix": "js copy right year",
+    "body": [
+      "/*",
+      "=====================================================",
+      "Todo =============== Copy Right =================",
+      "=====================================================",
+      "*/",
+      "",
+      "// Copy Right Year",
+      "let copyRightYear = document.querySelector(`.copyrightYear`);",
+      "let time = new Date();",
+      "let Year = time.getFullYear();",
+      "copyRightYear.innerHTML = Year;"
+    ],
+    "description": "سنة حقوق التأليف والنشر"
   },
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -6058,7 +6630,6 @@
   Todo: ******		   	Github			   ******
   Todo: ***********************************
   */
-
   "git help": {
     "prefix": "git help",
     "body": [
@@ -6602,6 +7173,38 @@
     "prefix": "git ignore file",
     "body": ["node_modules/"],
     "description": "git ignore file"
+  },
+  "الشرح الموقع على موقع ال Github": {
+    "prefix": "git readme Viwe",
+    "body": [
+      "# Website Name",
+      "",
+      "* Website Description ",
+      "",
+      "# FrontEnd Language",
+      "1. Html",
+      "2. Css",
+      "3. Javascript",
+      "",
+      "# BackEnd Language",
+      "1. Firebase",
+      "",
+      "# Tools Language",
+      "* Pug",
+      "* Scss",
+      "",
+      "",
+      "# Plugins",
+      "* Name [Demo](https://learncodingeasy.github.io/RepositoryName/dist/index.html)",
+      "",
+      "# Website Demo",
+      "Link [Demo](https://learncodingeasy.github.io/RepositoryName/dist/index.html)",
+      "",
+      "# Previw Website Image",
+      "![This is an image](https://raw.githubusercontent.com/learncodingeasy/RepositoryName/main/dist/preview.png)",
+      ""
+    ],
+    "description": "الشرح الموقع على موقع ال Github"
   },
   ///////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////
@@ -7878,7 +8481,9 @@
   */
   "GLobal Emoji": {
     "prefix": "emoji",
-    "body": ["${1|👉️|}"],
+    "body": [
+      "${1|👉️,👍,👊,☝️,👇,⭐,❤️,❤,🌍,🔔,🙏,💡,📌,⋐⋑,⋐,⋑,💻,🔊,⬇️,🏹,🔘,⭕,🟠,✔️,🔲,🔳,🖱️,❕,⏩,✍️,📘,🎵,🎶,🎹,🎼,🥁,🔗,📁,🛠️,#️⃣|}"
+    ],
     "description": "GLobal Emoji"
   },
   /*
@@ -8056,5 +8661,347 @@
       ""
     ],
     "description": "Navbar Pug"
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+
+  /*
+  Todo: *******************************
+  Todo: ******		   	Pwa			   ******
+  Todo: *******************************
+  */
+  "ملف يحتوي على معلومات حول التطبيق بشكل عام": {
+    "prefix": "pwa manifest.json file",
+    "body": [
+      "{",
+      "  \"lang\": \"en\",",
+      "  \"dir\": \"ltr\",",
+      "  \"name\": \"WebsiteName\",",
+      "  \"short_name\": \"WebsiteName\",",
+      "  \"scope\": \"/\",",
+      "  \"id\": \"superracer\",",
+      "  \"start_url\": \"/index.html\",",
+      "  \"display\": \"standalone\",",
+      "  \"background_color\": \"#FFE9D2\",",
+      "  \"theme_color\": \"#FFE1C4\",",
+      "  \"orientation\": \"portrait-primary\",",
+      "  \"ule\": \"https://via.placeholder.com/150\",",
+      "  \"icons\": [",
+      "    {",
+      "      \"src\": \"image/icons/icon-72x72.png\",",
+      "      \"type\": \"image/png\",",
+      "      \"sizes\": \"72x72\",",
+      "      \"purpose\": \"any maskable\"",
+      "    },",
+      "    {",
+      "      \"src\": \"image/icons/icon-96x96.png\",",
+      "      \"type\": \"image/png\",",
+      "      \"sizes\": \"96x96\",",
+      "      \"purpose\": \"any maskable\"",
+      "    },",
+      "    {",
+      "      \"src\": \"image/icons/icon-128x128.png\",",
+      "      \"type\": \"image/png\",",
+      "      \"sizes\": \"128x128\",",
+      "      \"purpose\": \"any maskable\"",
+      "    },",
+      "    {",
+      "      \"src\": \"image/icons/icon-144x144.png\",",
+      "      \"type\": \"image/png\",",
+      "      \"sizes\": \"144x144\",",
+      "      \"purpose\": \"any maskable\"",
+      "    },",
+      "    {",
+      "      \"src\": \"image/icons/icon-152x152.png\",",
+      "      \"type\": \"image/png\",",
+      "      \"sizes\": \"152x152\",",
+      "      \"purpose\": \"any maskable\"",
+      "    },",
+      "    {",
+      "      \"src\": \"image/icons/icon-192x192.png\",",
+      "      \"type\": \"image/png\",",
+      "      \"sizes\": \"192x192\",",
+      "      \"purpose\": \"any maskable\"",
+      "    },",
+      "    {",
+      "      \"src\": \"image/icons/icon-384x384.png\",",
+      "      \"type\": \"image/png\",",
+      "      \"sizes\": \"384x384\",",
+      "      \"purpose\": \"any maskable\"",
+      "    },",
+      "    {",
+      "      \"src\": \"image/icons/icon-512x512.png\",",
+      "      \"type\": \"image/png\",",
+      "      \"sizes\": \"512x512\",",
+      "      \"purpose\": \"any maskable\"",
+      "    }",
+      "  ],",
+      "  \"description\": \"My Progressive Web App\",",
+      "",
+      "  \"related_applications\": [",
+      "    {",
+      "      \"platform\": \"play\",",
+      "      \"url\": \"https://play.google.com/store/apps/details?id=com.example.myapp\",",
+      "      \"id\": \"com.example.myapp\"",
+      "    }",
+      "  ],",
+      "  \"prefer_related_applications\": false",
+      "}",
+      ""
+    ],
+    "description": "ملف يحتوي على معلومات حول التطبيق بشكل عام"
+  },
+  " يعمل هذا الملف كطبقة وسيطة بين التطبيق والشبكة": {
+    "prefix": "pwa sw.js file",
+    "body": [
+      "// Cache Name تحديد اسم مخبأ التخزين المؤقت",
+      "const staticCache = \"staticCache\";",
+      "",
+      "// Cache Name تحديد اسم مخبأ التخزين المؤقت الديناميكي",
+      "const dynamicCache = \"dynamicCache\";",
+      "",
+      "// Assets It Is The Element Website You Need To Cache",
+      "const assets = [",
+      "  \"/\",",
+      "  \"/index.html\",",
+      "  \"/js/app.js\",",
+      "  \"/js/script.js\",",
+      "  \"/js/materialize.min.js\",",
+      "  \"/css/styles.css\",",
+      "  \"/css/materialize.min.css\",",
+      "  \"/image/dish.png\",",
+      "  \"https://fonts.googleapis.com/icon?family=Material+Icons\",",
+      "  \"https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2\",",
+      "  \"/pages/fallback.html\",",
+      "];",
+      "",
+      "// Function Cache Size Limit",
+      "const limitCacheSize = (name, size) => {",
+      "  caches.open(name).then((cache) => {",
+      "    cache.keys().then((keys) => {",
+      "      if (keys.length > size) {",
+      "        cache.delete(keys[0]).then(limitCacheSize(name, size));",
+      "      }",
+      "    });",
+      "  });",
+      "};",
+      "",
+      "// install event",
+      "self.addEventListener(\"install\", (event) => {",
+      "  // console.log(\"Service Worker Installed\");",
+      "  //",
+      "  // WaitUntil = Wait Until Request installed Done",
+      "  event.waitUntil(",
+      "    /*",
+      "    Explain caches : Because We Access To Caches",
+      "    Explain Open : Open The Cache",
+      "    Explain staticCache : Cache Name",
+      "    Explain Cache : Single Cache And Add Assets Object Website Need To Cache",
+      "    */",
+      "    caches.open(staticCache).then((cache) => {",
+      "      console.log(\"Caching Shell Assets\");",
+      "      // Single Asset",
+      "      // cache.add(assets);",
+      "      cache.addAll(assets);",
+      "    })",
+      "  );",
+      "});",
+      "",
+      "// Fetch استجابة لطلبات الاسترداد",
+      "// Serve cached files or fetch and cache dynamic requests",
+      "",
+      "self.addEventListener(\"fetch\", (event) => {",
+      "  // console.log(\"Service Worker Has Been Fetched\", event);",
+      "  // respondWith = الرد",
+      "  if (event.request.url.indexOf(\"firestore.googleapis.com\") === -1) {",
+      "    event.respondWith(",
+      "      caches",
+      "        .match(event.request)",
+      "        .then((cacheRes) => {",
+      "          return (",
+      "            cacheRes ||",
+      "            fetch(event.request).then((fetchRes) => {",
+      "              return caches.open(dynamicCache).then((cache) => {",
+      "                cache.put(event.request.url, fetchRes.clone());",
+      "                // Check Cached Items Size",
+      "                limitCacheSize(dynamicCache, 15);",
+      "                return fetchRes;",
+      "              });",
+      "            })",
+      "          );",
+      "        })",
+      "        .catch(() => {",
+      "          if (event.request.url.indexOf(\".html\") > -1) {",
+      "            return caches.match(\"/pages/fallback.html\");",
+      "          }",
+      "        })",
+      "    );",
+      "  }",
+      "});",
+      "",
+      "// Activate تنظيف التخزين المؤقت القديم",
+      "",
+      "self.addEventListener(\"activate\", (event) => {",
+      "  // console.log(\"Service Worker Has Been Activated\");",
+      "  // waitUntil = Wait Until Request installed Done",
+      "  event.waitUntil(",
+      "    // caches = Because We Access To Caches",
+      "    // Keys = Search In Caches About Your Cache",
+      "",
+      "    caches.keys().then((cacheNames) => {",
+      "      return Promise.all(",
+      "        cacheNames",
+      "          .filter((name) => name !== staticCache && name !== dynamicCache)",
+      "          .map((name) => caches.delete(name))",
+      "      );",
+      "    })",
+      "  );",
+      "});",
+      ""
+    ],
+    "description": " يعمل هذا الملف كطبقة وسيطة بين التطبيق والشبكة"
+  },
+  " يعمل هذا الاعدادات على تعريف الموقع فى التلفونات ال Ios": {
+    "prefix": "pug pwa head",
+    "body": [
+      "// =============== Pwa ===============",
+      "link(rel=\"shortcut icon\" href=\"images/icons/icon-128.png\" type=\"images/x-icon\")",
+      "link(rel=\"manifest\" href=\"manifest.json\") ",
+      "// ios support",
+      "link(rel=\"apple-touch-icon\" href=\"images/icons/icon-24.png\" )",
+      "link(rel=\"apple-touch-icon\" href=\"images/icons/icon-32.png\" )",
+      "link(rel=\"apple-touch-icon\" href=\"images/icons/icon-48.png\" )",
+      "link(rel=\"apple-touch-icon\" href=\"images/icons/icon-64.png\" )",
+      "link(rel=\"apple-touch-icon\" href=\"images/icons/icon-72.png\" )",
+      "link(rel=\"apple-touch-icon\" href=\"images/icons/icon-96.png\" )",
+      "link(rel=\"apple-touch-icon\" href=\"images/icons/icon-128.png\" )",
+      "link(rel=\"apple-touch-icon\" href=\"images/icons/icon-256.png\" )",
+      "meta(name=\"apple-mobile-web-app-status-bar\" content=\"#db4938\") ",
+      "meta(name=\"theme-color\" content=\"#db4938\")",
+      "meta(name=\"application-name\" content=\"Food Code\")",
+      "link(rel=\"icon\" sizes=\"16x16 32x32 48x48\" href=\"images/icons/icon-256.png\") ",
+      "link(rel=\"icon\" sizes=\"512x512\" href=\"images/icons/icon-256.png\") "
+    ],
+    "description": " يعمل هذا الاعدادات على تعريف الموقع فى التلفونات ال Ios"
+  },
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
+
+  /*
+  Todo: *******************************
+  Todo: ******		 	Firebase	   ******
+  Todo: *******************************
+  */
+  "السماح بقراءة البيانات للجميع والسماح بالكتابة فقط للمستخدمين المسجلين": {
+    "prefix": "firebase rules 1",
+    "body": [
+      "rules_version = '2';",
+      "service cloud.firestore {",
+      "  match /databases/{database}/documents {",
+      "    match /collection-name/{document} {",
+      "      allow read: if true;",
+      "      allow write: if request.auth != null;",
+      "    }",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "السماح بقراءة البيانات للجميع والسماح بالكتابة فقط للمستخدمين المسجلين"
+  },
+  "السماح للمستخدمين بتحديث بياناتهم الشخصية فقط": {
+    "prefix": "firebase rules 2",
+    "body": [
+      "rules_version = '2';",
+      "service cloud.firestore {",
+      "  match /databases/{database}/documents {",
+      "    match /users/{userId} {",
+      "      allow read, update, delete: if request.auth.uid == userId;",
+      "      allow create: if request.auth.uid != null;",
+      "    }",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "السماح للمستخدمين بتحديث بياناتهم الشخصية فقط"
+  },
+  "السماح بالكتابة والقراءة فقط للمستخدمين الذين لديهم دور معين": {
+    "prefix": "firebase rules 3",
+    "body": [
+      "rules_version = '2';",
+      "service cloud.firestore {",
+      "  match /databases/{database}/documents {",
+      "    match /collection-name/{document} {",
+      "      allow read, write: if get(/databases/$(database)/documents/roles/$(request.auth.uid)).data.role == 'admin';",
+      "    }",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "السماح بالكتابة والقراءة فقط للمستخدمين الذين لديهم دور معين"
+  },
+  "السماح بالوصول إلى البيانات فقط بعد توثيق الدخول (لا يسمح بالوصول دون تسجيل الدخول)": {
+    "prefix": "firebase rules 4",
+    "body": [
+      "rules_version = '2';",
+      "service cloud.firestore {",
+      "  match /databases/{database}/documents {",
+      "    match /collection-name/{document} {",
+      "      allow read, write: if request.auth != null;",
+      "    }",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "السماح بالوصول إلى البيانات فقط بعد توثيق الدخول (لا يسمح بالوصول دون تسجيل الدخول)"
   }
 }
