@@ -1,7 +1,9 @@
 # Snippets
+
 Snippets
 
-###### Global Snippets For
+## Global Snippets For
+
 1. Html
 2. Pug
 3. Css
