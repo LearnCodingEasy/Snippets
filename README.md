@@ -70,7 +70,7 @@ Auto Rename Tag
 
 ### [ Vscode ]
 ```
-Reload
+Reload [Reload](https://marketplace.visualstudio.com/items?itemName=natqe.reload)
 ```
 [Reload](https://marketplace.visualstudio.com/items?itemName=natqe.reload)
 
